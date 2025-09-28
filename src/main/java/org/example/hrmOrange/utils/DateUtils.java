@@ -1,4 +1,4 @@
 package org.example.hrmOrange.utils;
 
-public class ScreenshotUtils {
+public class DateUtils {
 }
