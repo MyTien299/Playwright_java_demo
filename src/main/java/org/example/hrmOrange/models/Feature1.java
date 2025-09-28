@@ -1,4 +1,4 @@
 package org.example.hrmOrange.models;
 
-public class Feature_1 {
+public class Feature1 {
 }

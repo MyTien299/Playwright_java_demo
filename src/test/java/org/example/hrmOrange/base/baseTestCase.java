@@ -1,4 +1,4 @@
 package org.example.hrmOrange.base;
 
-public class BaseTestCase_ {
+public class baseTestCase {
 }
