@@ -1,6 +1,5 @@
 package org.example.hrmOrange.constants;
 
-
 import org.example.hrmOrange.helpers.PropertiesHelper;
 
 public class AppConfig {
@@ -12,8 +11,8 @@ public class AppConfig {
     public static boolean VIDEO_RECORD = Boolean.parseBoolean(PropertiesHelper.getValue("VIDEO_RECORD"));
     public static boolean SCREENSHOT_FAIL = Boolean.parseBoolean(PropertiesHelper.getValue("SCREENSHOT_FAIL"));
     public static boolean SCREENSHOT_PASS = Boolean.parseBoolean(PropertiesHelper.getValue("SCREENSHOT_PASS"));
-    public static int TIMEOUT_STEP = Integer.parseInt(PropertiesHelper.getValue("TIMEOUT_STEP"));
-    public static int TIMEOUT_PAGE_LOAD = Integer.parseInt(PropertiesHelper.getValue("TIMEOUT_PAGE_LOAD"));
+    public static long TIMEOUT_STEP = Long.parseLong(PropertiesHelper.getValue("TIMEOUT_STEP"));
+    public static long TIMEOUT_PAGE_LOAD = Long.parseLong(PropertiesHelper.getValue("TIMEOUT_PAGE_LOAD"));
     public static boolean TRACE_VIEWER = Boolean.parseBoolean(PropertiesHelper.getValue("TRACE_VIEWER"));
     public static String TRACING_PATH = PropertiesHelper.getValue("TRACING_PATH");
     public static String SCREENSHOT_PATH = PropertiesHelper.getValue("SCREENSHOT_PATH");

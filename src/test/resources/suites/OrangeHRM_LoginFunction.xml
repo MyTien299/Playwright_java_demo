@@ -1,0 +1,9 @@
+<suite name="OrangeHRM Login Suite" parallel="false">
+
+    <test name="Login Function Test">
+        <packages>
+            <package name="org.example.hrmOrange.testcase.ui.login"/>
+        </packages>
+    </test>
+
+</suite>
