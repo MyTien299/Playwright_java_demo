@@ -1,6 +1,7 @@
 package org.example.hrmOrange.managers;
 
 import org.example.hrmOrange.constants.AppConfig;
+import org.example.hrmOrange.page.dashboard.DashboardComponent;
 import org.example.hrmOrange.utils.LogUtils;
 import com.microsoft.playwright.*;
 
@@ -11,6 +12,7 @@ public class PageManager {
     private static ThreadLocal<BrowserContext> browserContextThreadLocal = new ThreadLocal<>();
     private static ThreadLocal<Playwright> playwrightThreadLocal = new ThreadLocal<>();
     private static ThreadLocal<Page> pageThreadLocal = new ThreadLocal<>();
+    private static ThreadLocal<DashboardComponent> dashboardComponentThreadLocal = new ThreadLocal<>();
 
     public static Browser getBrowser() {
         return browserThreadLocal.get();
@@ -109,5 +111,12 @@ public class PageManager {
                     .setPath(Paths.get(path)));
             LogUtils.info("Closed tracing.");
         }
+    }
+
+    public static DashboardComponent getDashboardComponent() {
+        if (dashboardComponentThreadLocal.get() == null) {
+            dashboardComponentThreadLocal.set(new DashboardComponent(getPage()));
+        }
+        return dashboardComponentThreadLocal.get();
     }
 }

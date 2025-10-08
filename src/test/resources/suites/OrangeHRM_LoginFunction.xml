@@ -3,7 +3,9 @@
     <test name="Login Function Test">
         <packages>
             <package name="org.example.hrmOrange.testcase.ui.login"/>
+            <package name="org.example.hrmOrange.testcase.ui.admin"/>
         </packages>
+
     </test>
 
 </suite>

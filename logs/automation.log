@@ -1,0 +1,31 @@
+[2025-10-09 00:54:19] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-09 00:59:25] [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_LoginFunction.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-09 00:59:25] [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+[2025-10-09 00:59:25] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_LoginFunction.xml
+
+[2025-10-09 01:02:24] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-09 01:03:01] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-09 01:04:06] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-09 01:04:36] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-09 01:04:52] [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_LoginFunction.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-09 01:04:52] [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+[2025-10-09 01:04:52] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_LoginFunction.xml
+
+[2025-10-09 01:09:47] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-09 01:13:49] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+

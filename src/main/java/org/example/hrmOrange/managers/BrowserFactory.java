@@ -59,15 +59,15 @@ public class BrowserFactory {
         if(AppConfig.HEADLESS) {
             browserContext = PageManager.getBrowser().newContext(new Browser.NewContextOptions()
                             .setViewportSize(AppConfig.VIEWPORT_WIDTH, AppConfig.VIEWPORT_HEIGHT)
-                            .setRecordVideoDir(Paths.get(AppConfig.VIDEO_RECORD_PATH))
-                            .setRecordVideoSize(AppConfig.VIEWPORT_WIDTH, AppConfig.VIEWPORT_HEIGHT)
+                            //.setRecordVideoDir(Paths.get(AppConfig.VIDEO_RECORD_PATH))
+                            //.setRecordVideoSize(AppConfig.VIEWPORT_WIDTH, AppConfig.VIEWPORT_HEIGHT)
                     //.setDeviceScaleFactor(1)
             );
         }else {
             browserContext = PageManager.getBrowser().newContext(new Browser.NewContextOptions()
                             .setViewportSize(null)
-                            .setRecordVideoDir(Paths.get(AppConfig.VIDEO_RECORD_PATH))
-                            .setRecordVideoSize(width, height)
+                            //.setRecordVideoDir(Paths.get(AppConfig.VIDEO_RECORD_PATH))
+                            //.setRecordVideoSize(width, height)
                     //.setDeviceScaleFactor(1)
             );
         }
