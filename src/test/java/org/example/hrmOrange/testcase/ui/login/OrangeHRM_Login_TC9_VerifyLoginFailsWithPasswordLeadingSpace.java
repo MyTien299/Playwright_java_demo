@@ -22,11 +22,19 @@ public class OrangeHRM_Login_TC9_VerifyLoginFailsWithPasswordLeadingSpace extend
     @TestCaseID("OrangeHRM_TC09")
     @Test(description = "Verify that login fails when password starts with whitespace")
     public void loginWithPasswordLeadingSpace() {
+        logger.info("Navigating to login page...");
         loginPage.navigateToLogin();
+
+        logger.info("Performing login with username='Admin' and password=' admin123'");
         loginPage.login("Admin", " admin123"); // password starts with whitespace
 
+        logger.info("Getting error message from login page...");
         String error = loginPage.getErrorMessage();
+
+        logger.info("Verifying error message...");
         Assert.assertTrue(error.contains("Invalid credentials"),
                 "Expected 'Invalid credentials' message not shown when password has leading space!");
+
+        logger.info("Testcase passed: login failed with password having leading space");
     }
 }

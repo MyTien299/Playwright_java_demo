@@ -6,15 +6,14 @@ import org.example.hrmOrange.managers.PageManager;
 import org.example.hrmOrange.page.admin.AdminPage;
 import org.example.hrmOrange.page.dashboard.DashboardComponent;
 import org.example.hrmOrange.page.login.LoginPage;
-import org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class OrangeHRM_Admin_TC1_VerifySearchAdminByUsername extends BaseTest {
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Admin_TC1_VerifySearchAdminByUsername.class);
+public class OrangeHRM_Admin_TC4_SearchByEmployeeName extends BaseTest {
+    private static final Logger logger = LogManager.getLogger(OrangeHRM_Admin_TC4_SearchByEmployeeName.class);
     private LoginPage loginPage;
     private DashboardComponent dashboardComponent;
     private AdminPage adminPage;
@@ -27,14 +26,12 @@ public class OrangeHRM_Admin_TC1_VerifySearchAdminByUsername extends BaseTest {
         adminPage = new AdminPage();
     }
 
-    @TestCaseID("OrangeHRM_TC11")
-    @Test(description = "Verify that admin search by username 'Admin' returns correct data")
-    public void verifySearchAdminByUsername() {
-        // Step 1: Navigate to login
+    @TestCaseID("OrangeHRM_TC14")
+    @Test(description = "Verify that admin search by Employee Name 'manda akhil user' returns result 'manda user'")
+    public void searchByEmployeeName() {
         logger.info("Navigating to login page...");
         loginPage.navigateToLogin();
 
-        // Step 2: Login
         logger.info("Performing login with username='Admin' and password='admin123'");
         loginPage.login("Admin", "admin123");
 
@@ -42,19 +39,19 @@ public class OrangeHRM_Admin_TC1_VerifySearchAdminByUsername extends BaseTest {
         Assert.assertTrue(dashboardComponent.isAtDashboard(),
                 "Login failed — dashboard not visible!");
 
-        // Step 3: Navigate to Admin module
         logger.info("Navigating to Admin page...");
         adminPage.navigateToAdmin();
 
-        // Step 4: Search username = Admin
-        logger.info("Searching for admin user...");
-        adminPage.searchAdminByUsername("Admin");
+        logger.info("Entering Employee Name = test");
+        adminPage.enterEmployeeName("test");
 
-        // Step 5: Verify result table has Admin
-        logger.info("Verifying admin user is displayed in the result table...");
-        Assert.assertTrue(adminPage.isAdminDisplayedInTable("Admin"),
-                "Admin user not found in the result table!");
+        logger.info("Clicking Search button...");
+        adminPage.clickSearch();
 
-        logger.info("Testcase passed: admin search by username 'Admin' returns correct data");
+        logger.info("Verifying result contains employee 'TestFirstName TestLastName'...");
+        Assert.assertTrue(adminPage.verifyEmployeeNameInResults("TestFirstName TestLastName"),
+                "Expected employee 'manda user' not found in the result table!");
+
+        logger.info("Testcase passed: search by Employee Name returns correct result");
     }
 }

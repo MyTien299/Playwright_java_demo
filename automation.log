@@ -1,0 +1,1298 @@
+[2025-10-12 22:20:28] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:20:28] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:20:36] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully - Navigating to login page...
+[2025-10-12 22:20:37] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully - Performing login with username='Admin'
+[2025-10-12 22:20:39] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully - Waiting for dashboard to appear...
+[2025-10-12 22:20:40] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully - Verifying dashboard is visible...
+[2025-10-12 22:20:40] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully - Verifying dashboard title...
+[2025-10-12 22:20:40] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully - Testcase passed: login successful and dashboard verified
+[2025-10-12 22:23:36] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:23:36] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:23:44] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword - Navigating to login page...
+[2025-10-12 22:23:46] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword - Performing login with username='Admin' and invalid password='wrongpass'
+[2025-10-12 22:23:47] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword - Getting error message from login page...
+[2025-10-12 22:23:48] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword - Verifying error message...
+[2025-10-12 22:23:48] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword - Testcase passed: login failed with invalid password
+[2025-10-12 22:26:10] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:26:10] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:26:18] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername - Navigating to login page...
+[2025-10-12 22:26:18] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername - Performing login with invalid username='WrongUser' and valid password='admin123'
+[2025-10-12 22:26:20] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername - Getting error message from login page...
+[2025-10-12 22:26:21] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername - Verifying error message...
+[2025-10-12 22:26:21] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername - Testcase passed: login failed with invalid username
+[2025-10-12 22:28:03] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:28:03] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:28:10] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Navigating to login page...
+[2025-10-12 22:28:10] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Performing login with invalid username='wrongUser' and invalid password='wrongPass'
+[2025-10-12 22:28:12] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Getting error message from login page...
+[2025-10-12 22:28:13] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Verifying error message...
+[2025-10-12 22:28:13] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Testcase passed: login failed with invalid username and password
+[2025-10-12 22:29:43] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:29:43] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:30:36] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:30:37] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:30:44] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername - Navigating to login page...
+[2025-10-12 22:30:46] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername - Performing login with empty username='Admin' and valid password='admin123'
+[2025-10-12 22:30:46] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername - Getting error message from login page...
+[2025-10-12 22:30:46] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername - Verifying error message...
+[2025-10-12 22:30:46] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername - Testcase passed: login failed with empty username
+[2025-10-12 22:32:42] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:32:42] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:32:49] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword - Navigating to login page...
+[2025-10-12 22:32:50] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword - Performing login with valid username='Admin' and empty password=''
+[2025-10-12 22:32:51] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword - Getting error message from login page...
+[2025-10-12 22:32:51] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword - Verifying error message...
+[2025-10-12 22:32:51] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword - Testcase passed: login failed with empty password
+[2025-10-12 22:34:35] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:34:35] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:34:43] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData - Navigating to login page...
+[2025-10-12 22:34:43] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData - Performing login with both empty username and password...
+[2025-10-12 22:34:45] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData - Getting error message from login page...
+[2025-10-12 22:34:45] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData - Verifying error message...
+[2025-10-12 22:34:45] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData - Testcase passed: login failed with both empty username and password
+[2025-10-12 22:36:11] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:36:11] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:36:18] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace - Navigating to login page...
+[2025-10-12 22:36:18] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace - Performing login with username=' Admin' and valid password='admin123'
+[2025-10-12 22:36:21] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace - Getting error message from login page...
+[2025-10-12 22:36:22] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace - Verifying error message...
+[2025-10-12 22:36:22] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace - Testcase passed: login failed with username having leading space
+[2025-10-12 22:39:39] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:39:39] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:39:46] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace - Navigating to login page...
+[2025-10-12 22:39:47] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace - Performing login with username='Admin' and password='admin123 '
+[2025-10-12 22:39:49] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace - Getting error message from login page...
+[2025-10-12 22:39:50] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace - Verifying error message...
+[2025-10-12 22:39:50] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace - Testcase passed: login failed with password having trailing space
+[2025-10-12 22:42:54] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 22:42:54] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 22:43:02] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to login page...
+[2025-10-12 22:43:02] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Performing login with username='Admin' and password='admin123'
+[2025-10-12 22:43:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying dashboard is visible...
+[2025-10-12 22:43:06] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to Admin page...
+[2025-10-12 22:43:07] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Searching for admin user...
+[2025-10-12 22:43:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying admin user is displayed in the result table...
+[2025-10-12 22:43:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Testcase passed: admin search by username 'Admin' returns correct data
+[2025-10-12 23:16:31] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:16:31] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:16:58] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-12 23:16:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-12 23:17:02] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-12 23:17:02] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-12 23:17:04] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:17:04] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-12 23:21:02] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:21:02] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:21:11] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-12 23:21:11] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-12 23:21:13] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-12 23:21:14] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-12 23:21:16] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:21:16] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-12 23:33:55] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:33:55] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:34:00] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-12 23:34:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-12 23:34:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-12 23:34:04] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-12 23:34:06] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:34:06] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-12 23:34:14] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Failed to select User Role 'Admin': Error {
+  message='Timeout 8000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 8000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-4966486350013059970\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-4966486350013059970\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-4966486350013059970\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-4966486350013059970\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-4966486350013059970\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//label[normalize-space()='User Role']/following-sibling::div//div[contains(@class,'oxd-select-text')]") to be visible
+
+[2025-10-12 23:36:43] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:36:43] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:36:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-12 23:36:49] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-12 23:36:51] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-12 23:36:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Clicking Search button...
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Searched admin by username: 
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying at least one admin user is displayed in the result table...
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-12 23:36:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Testcase passed: admin search by User Role 'Admin' returns correct data
+[2025-10-12 23:40:23] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:40:24] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:40:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to login page...
+[2025-10-12 23:40:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Logging in with username='Admin' and password='admin123'
+[2025-10-12 23:40:32] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Dashboard is visible
+[2025-10-12 23:40:32] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to Admin page...
+[2025-10-12 23:40:34] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:40:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Selecting Status = Enabled...
+[2025-10-12 23:40:42] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Failed to select Status 'Enabled': Error {
+  message='Timeout 8000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 8000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-10309163656801300262\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-10309163656801300262\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-10309163656801300262\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-10309163656801300262\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-10309163656801300262\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//label[normalize-space()='Status']/following-sibling::div//div[contains(@class,'oxd-select-text')]") to be visible
+
+[2025-10-12 23:42:11] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:42:11] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:42:17] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to login page...
+[2025-10-12 23:42:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Logging in with username='Admin' and password='admin123'
+[2025-10-12 23:42:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Dashboard is visible
+[2025-10-12 23:42:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to Admin page...
+[2025-10-12 23:42:23] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:42:23] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Selecting Status = Enabled...
+[2025-10-12 23:42:23] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Failed to select Status 'Enabled': Error {
+  message='Error: strict mode violation: locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") resolved to 3 elements:
+    1) <div data-v-67d2aedf="" data-v-13cf171c="" class="oxd-select-text oxd-select-text--active">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text")
+    2) <div tabindex="0" data-v-67d2aedf="" class="oxd-select-text-input">-- Select --</div> aka getByText("-- Select --").nth(1)
+    3) <div data-v-67d2aedf="" class="oxd-select-text--after">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") resolved to 3 elements:
+    1) <div data-v-67d2aedf="" data-v-13cf171c="" class="oxd-select-text oxd-select-text--active">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text")
+    2) <div tabindex="0" data-v-67d2aedf="" class="oxd-select-text-input">-- Select --</div> aka getByText("-- Select --").nth(1)
+    3) <div data-v-67d2aedf="" class="oxd-select-text--after">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at process.processImmediate (node:internal/timers:454:9)
+    at async LongStandingScope._race (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\javascript.js:242:12)
+    at async C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:635:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:923:24)
+    at async C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:621:14
+    at async ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\dispatchers\frameDispatcher.js:105:85)
+}
+Call log:
+- waiting for locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") to be visible
+
+com.microsoft.playwright.PlaywrightException: Error {
+  message='Error: strict mode violation: locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") resolved to 3 elements:
+    1) <div data-v-67d2aedf="" data-v-13cf171c="" class="oxd-select-text oxd-select-text--active">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text")
+    2) <div tabindex="0" data-v-67d2aedf="" class="oxd-select-text-input">-- Select --</div> aka getByText("-- Select --").nth(1)
+    3) <div data-v-67d2aedf="" class="oxd-select-text--after">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") resolved to 3 elements:
+    1) <div data-v-67d2aedf="" data-v-13cf171c="" class="oxd-select-text oxd-select-text--active">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text")
+    2) <div tabindex="0" data-v-67d2aedf="" class="oxd-select-text-input">-- Select --</div> aka getByText("-- Select --").nth(1)
+    3) <div data-v-67d2aedf="" class="oxd-select-text--after">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at process.processImmediate (node:internal/timers:454:9)
+    at async LongStandingScope._race (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\javascript.js:242:12)
+    at async C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:635:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:923:24)
+    at async C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:621:14
+    at async ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\dispatchers\frameDispatcher.js:105:85)
+}
+Call log:
+- waiting for locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") to be visible
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:619) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:619) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:615) ~[playwright-1.46.0.jar:1.46.0]
+	at org.example.hrmOrange.page.admin.AdminPage.selectStatus(AdminPage.java:65) [test-classes/:?]
+	at org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled.searchByStatusEnabled(OrangeHRM_Admin_TC3_SearchByStatusEnabled.java:51) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") resolved to 3 elements:
+    1) <div data-v-67d2aedf="" data-v-13cf171c="" class="oxd-select-text oxd-select-text--active">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text")
+    2) <div tabindex="0" data-v-67d2aedf="" class="oxd-select-text-input">-- Select --</div> aka getByText("-- Select --").nth(1)
+    3) <div data-v-67d2aedf="" class="oxd-select-text--after">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after")
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") resolved to 3 elements:
+    1) <div data-v-67d2aedf="" data-v-13cf171c="" class="oxd-select-text oxd-select-text--active">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text")
+    2) <div tabindex="0" data-v-67d2aedf="" class="oxd-select-text-input">-- Select --</div> aka getByText("-- Select --").nth(1)
+    3) <div data-v-67d2aedf="" class="oxd-select-text--after">…</div> aka locator("div:nth-child(4) > .oxd-input-group > div:nth-child(2) > .oxd-select-wrapper > .oxd-select-text > .oxd-select-text--after")
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\chromium\crExecutionContext.js:92:33)
+    at runNextTicks (node:internal/process/task_queues:60:5)
+    at process.processImmediate (node:internal/timers:454:9)
+    at async LongStandingScope._race (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\utils\manualPromise.js:96:14)
+    at async evaluateExpression (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\javascript.js:242:12)
+    at async C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:635:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:923:24)
+    at async C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\frames.js:621:14
+    at async ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\progress.js:82:22)
+    at async FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-11828808526839858854\package\lib\server\dispatchers\frameDispatcher.js:105:85)
+}
+Call log:
+- waiting for locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[contains(@class,'oxd-select-text')]") to be visible
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118) ~[playwright-1.46.0.jar:1.46.0]
+	... 35 more
+[2025-10-12 23:43:55] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:43:56] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:44:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to login page...
+[2025-10-12 23:44:02] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Logging in with username='Admin' and password='admin123'
+[2025-10-12 23:44:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Dashboard is visible
+[2025-10-12 23:44:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to Admin page...
+[2025-10-12 23:44:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:44:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Selecting Status = Enabled...
+[2025-10-12 23:44:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-12 23:44:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Clicking Search button...
+[2025-10-12 23:44:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-12 23:44:22] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Verifying that at least one Enabled account is displayed...
+[2025-10-12 23:44:22] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Enabled
+[2025-10-12 23:44:22] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Testcase passed: Admin search by Status 'Enabled' returns correct data
+[2025-10-12 23:44:31] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:44:31] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:44:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-12 23:44:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-12 23:44:45] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-12 23:44:46] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Clicking Search button...
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Searched admin by username: 
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying at least one admin user is displayed in the result table...
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-12 23:44:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Testcase passed: admin search by User Role 'Admin' returns correct data
+[2025-10-12 23:49:50] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:49:50] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:49:55] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-12 23:49:55] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Logging in as Admin...
+[2025-10-12 23:49:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard visibility...
+[2025-10-12 23:49:58] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin module...
+[2025-10-12 23:50:00] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:50:00] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering employee name: manda user
+[2025-10-12 23:53:38] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:53:38] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:53:46] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-12 23:53:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Logging in as Admin...
+[2025-10-12 23:53:51] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard visibility...
+[2025-10-12 23:53:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin module...
+[2025-10-12 23:53:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:53:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering employee name: manda user
+[2025-10-12 23:53:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda user
+[2025-10-12 23:53:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-12 23:53:55] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-12 23:53:55] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying that employee 'manda user' appears in search result...
+[2025-10-12 23:55:39] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:55:39] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:55:44] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-12 23:55:45] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Logging in as Admin...
+[2025-10-12 23:55:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard visibility...
+[2025-10-12 23:55:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin module...
+[2025-10-12 23:55:49] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:55:49] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering employee name: Paul Collings
+[2025-10-12 23:55:49] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: Paul Collings
+[2025-10-12 23:55:49] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-12 23:55:49] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-12 23:55:49] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying that employee 'Paul Collings' appears in search result...
+[2025-10-12 23:59:03] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-12 23:59:04] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-12 23:59:09] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-12 23:59:09] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Logging in as Admin...
+[2025-10-12 23:59:12] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard visibility...
+[2025-10-12 23:59:13] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin module...
+[2025-10-12 23:59:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-12 23:59:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering employee name: manda akhil user
+[2025-10-12 23:59:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda akhil user
+[2025-10-12 23:59:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-12 23:59:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-12 23:59:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying that employee 'manda akhil user' appears in search result...
+[2025-10-13 00:07:30] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:07:31] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:07:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 00:07:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 00:07:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 00:07:39] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 00:07:41] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:07:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 00:07:41] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda akhil user
+[2025-10-13 00:07:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 00:07:41] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:07:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'manda user'...
+[2025-10-13 00:09:44] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:09:44] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:09:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 00:09:49] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 00:09:51] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 00:09:51] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 00:09:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:09:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 00:09:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda akhil user
+[2025-10-13 00:09:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 00:09:54] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:09:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'manda user'...
+[2025-10-13 00:10:04] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Error verifying employee name: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-5828940821246876093\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-5828940821246876093\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-5828940821246876093\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-5828940821246876093\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-5828940821246876093\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[@role='rowgroup']//div[@role='row']//div[@role='cell' and normalize-space(text())='manda user']").first() to be visible
+
+[2025-10-13 00:15:48] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:15:48] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:15:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 00:15:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 00:15:56] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 00:15:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 00:15:59] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:15:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 00:15:59] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda
+[2025-10-13 00:15:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 00:15:59] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:15:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'manda user'...
+[2025-10-13 00:16:09] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Error verifying employee name: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-12158135458479937982\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-12158135458479937982\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-12158135458479937982\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-12158135458479937982\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-12158135458479937982\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[@role='rowgroup']//div[@role='row']//div[@role='cell' and normalize-space(text())='manda user']").first() to be visible
+
+[2025-10-13 00:20:10] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:20:10] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:20:16] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 00:20:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 00:20:19] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 00:20:20] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 00:20:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:20:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 00:20:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda
+[2025-10-13 00:20:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 00:20:22] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:20:22] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'manda user'...
+[2025-10-13 00:20:22] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found employee name matching: manda user
+[2025-10-13 00:20:22] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Testcase passed: search by Employee Name returns correct result
+[2025-10-13 00:37:36] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:37:37] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:37:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to login page...
+[2025-10-13 00:37:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Logging in with Admin credentials...
+[2025-10-13 00:37:44] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying dashboard visibility...
+[2025-10-13 00:37:45] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to Admin page...
+[2025-10-13 00:37:47] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:37:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Filling search fields: username='Admin', role='Admin', status='Enabled'
+[2025-10-13 00:37:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Searched admin by username: Admin
+[2025-10-13 00:37:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 00:37:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 00:37:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Clicking Search button...
+[2025-10-13 00:37:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:37:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying result contains user 'Admin' with role 'Admin' and status 'Enabled'
+[2025-10-13 00:37:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 00:37:49] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found employee name matching: Admin
+[2025-10-13 00:37:49] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Enabled
+[2025-10-13 00:37:49] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - ✅ Testcase passed: Search by Username + Role + Status works correctly.
+[2025-10-13 00:45:59] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:45:59] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:46:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 00:46:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 00:46:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 00:46:10] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:46:10] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering invalid employee name...
+[2025-10-13 00:49:06] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:49:06] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:49:11] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 00:49:12] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 00:49:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 00:49:17] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:49:17] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering invalid employee name...
+[2025-10-13 00:49:17] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:49:17] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Clicking Search...
+[2025-10-13 00:49:17] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:49:17] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Verifying no results found...
+[2025-10-13 00:49:17] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 00:49:28] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 00:49:28] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 00:49:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to login page...
+[2025-10-13 00:49:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Logging in with Admin credentials...
+[2025-10-13 00:49:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying dashboard visibility...
+[2025-10-13 00:49:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to Admin page...
+[2025-10-13 00:49:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 00:49:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Filling search fields: username='Admin', role='Admin', status='Enabled'
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Clicking Search button...
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying result contains user 'Admin' with role 'Admin' and status 'Enabled'
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found employee name matching: Admin
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Enabled
+[2025-10-13 00:49:39] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - ✅ Testcase passed: Search by Username + Role + Status works correctly.
+[2025-10-13 01:05:58] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:05:58] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:06:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 01:06:04] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 01:06:07] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 01:06:08] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:06:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering Employee Name = manda akhil user
+[2025-10-13 01:06:08] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: Invalid Employee XYZ
+[2025-10-13 01:06:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Clicking Search...
+[2025-10-13 01:06:08] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:06:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Verifying no results found...
+[2025-10-13 01:06:13] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - No 'No Records Found' message detected.
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 5000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//span[normalize-space()='No Records Found']") to be visible
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:619) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:619) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:615) ~[playwright-1.46.0.jar:1.46.0]
+	at org.example.hrmOrange.page.admin.AdminPage.isNoRecordFound(AdminPage.java:140) [test-classes/:?]
+	at org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee.searchWithInvalidEmployee(OrangeHRM_Admin_TC5_SearchWithInvalidEmployee.java:57) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 5000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-8248063497506775059\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//span[normalize-space()='No Records Found']") to be visible
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118) ~[playwright-1.46.0.jar:1.46.0]
+	... 35 more
+[2025-10-13 01:08:15] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:08:15] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:08:20] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 01:08:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 01:08:23] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 01:08:25] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:08:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering Employee Name = manda akhil user
+[2025-10-13 01:08:25] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: Invalid Employee XYZ
+[2025-10-13 01:08:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Clicking Search...
+[2025-10-13 01:08:25] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:08:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Verifying invalid employee name message displayed...
+[2025-10-13 01:08:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 01:11:54] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:11:54] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:11:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_SearchWithInvalidUserRole - Navigating to login page...
+[2025-10-13 01:12:00] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_SearchWithInvalidUserRole - Logging in as Admin...
+[2025-10-13 01:12:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_SearchWithInvalidUserRole - Navigating to Admin page...
+[2025-10-13 01:12:04] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:12:04] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_SearchWithInvalidUserRole - Selecting invalid User Role (ESS)...
+[2025-10-13 01:12:04] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 01:12:04] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_SearchWithInvalidUserRole - Clicking Search...
+[2025-10-13 01:12:04] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:12:04] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_SearchWithInvalidUserRole - Verifying no records found...
+[2025-10-13 01:12:09] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - No 'No Records Found' message detected.
+com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 5000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//span[normalize-space()='No Records Found']") to be visible
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:120) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:106) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.FrameImpl.waitForSelectorImpl(FrameImpl.java:1060) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.lambda$waitForImpl$7(LocatorImpl.java:619) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:89) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.waitForImpl(LocatorImpl.java:619) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.LocatorImpl.waitFor(LocatorImpl.java:615) ~[playwright-1.46.0.jar:1.46.0]
+	at org.example.hrmOrange.page.admin.AdminPage.isNoRecordFound(AdminPage.java:140) [test-classes/:?]
+	at org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_SearchWithInvalidUserRole.searchWithInvalidUserRole(OrangeHRM_Admin_TC8_SearchWithInvalidUserRole.java:50) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.10.2.jar:7.10.2]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.10.2.jar:7.10.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestRunner.run(TestRunner.java:614) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.10.2.jar:7.10.2]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.10.2.jar:7.10.2]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.10.2.jar:7.10.2]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+Caused by: com.microsoft.playwright.TimeoutError: Error {
+  message='Timeout 5000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 5000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-16415091382190099488\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//span[normalize-space()='No Records Found']") to be visible
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:254) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211) ~[playwright-1.46.0.jar:1.46.0]
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:118) ~[playwright-1.46.0.jar:1.46.0]
+	... 35 more
+[2025-10-13 01:20:47] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:20:47] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:20:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to login page...
+[2025-10-13 01:20:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Logging in as Admin...
+[2025-10-13 01:20:55] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to Admin page...
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Filling search filters...
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda user
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Clicking Reset button...
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Reset button
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Verifying that all filters are cleared...
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Filters cleared check -> Username: '', Employee: '', Role: '-- Select --', Status: '-- Select --'
+[2025-10-13 01:20:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Testcase passed: Reset button clears all filters successfully.
+[2025-10-13 01:22:33] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:22:33] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:22:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to login page...
+[2025-10-13 01:22:39] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Logging in as Admin...
+[2025-10-13 01:22:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to Admin page...
+[2025-10-13 01:22:43] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:22:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Clicking Search without entering any filters...
+[2025-10-13 01:22:43] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:22:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Verifying that user list is displayed...
+[2025-10-13 01:22:48] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - No 'Invalid' message detected.
+[2025-10-13 01:25:42] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:25:43] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:25:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to login page...
+[2025-10-13 01:25:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Logging in as Admin...
+[2025-10-13 01:25:51] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to Admin page...
+[2025-10-13 01:25:53] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:25:53] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Clicking Search without entering any filters...
+[2025-10-13 01:25:53] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:25:53] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Verifying that user list is displayed...
+[2025-10-13 01:25:53] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Testcase passed: Search without filters displays all users.
+[2025-10-13 01:28:51] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:28:51] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:28:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to login page...
+[2025-10-13 01:28:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Logging in as Admin...
+[2025-10-13 01:29:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to Admin page...
+[2025-10-13 01:29:02] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:29:02] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Entering valid username = 'Admin'...
+[2025-10-13 01:29:03] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:29:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Selecting invalid role = 'ESS'...
+[2025-10-13 01:29:03] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 01:29:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Clicking Search button...
+[2025-10-13 01:29:03] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:29:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Verifying that no records are found...
+[2025-10-13 01:29:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Testcase passed: Searching with valid username and invalid role shows no results.
+[2025-10-13 01:32:02] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:32:03] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:32:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to login page...
+[2025-10-13 01:32:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:32:11] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying dashboard is visible...
+[2025-10-13 01:32:12] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to Admin page...
+[2025-10-13 01:32:13] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:32:13] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Searching for admin user...
+[2025-10-13 01:32:13] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:32:13] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying admin user is displayed in the result table...
+[2025-10-13 01:32:14] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Admin
+[2025-10-13 01:32:14] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Testcase passed: admin search by username 'Admin' returns correct data
+[2025-10-13 01:32:23] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml"
+[2025-10-13 01:32:23] [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-13 01:32:23] [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+[2025-10-13 01:32:23] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml
+
+[2025-10-13 01:32:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to login page...
+[2025-10-13 01:32:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Logging in as Admin...
+[2025-10-13 01:32:31] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to Admin page...
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Entering valid username = 'Admin'...
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Selecting invalid role = 'ESS'...
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Clicking Search button...
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:32:33] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Verifying that no records are found...
+[2025-10-13 01:32:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Testcase passed: Searching with valid username and invalid role shows no results.
+[2025-10-13 01:32:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to login page...
+[2025-10-13 01:32:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:32:40] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying dashboard is visible...
+[2025-10-13 01:32:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to Admin page...
+[2025-10-13 01:32:42] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:32:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Searching for admin user...
+[2025-10-13 01:32:42] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:32:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying admin user is displayed in the result table...
+[2025-10-13 01:32:43] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Admin
+[2025-10-13 01:32:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Testcase passed: admin search by username 'Admin' returns correct data
+[2025-10-13 01:32:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-13 01:32:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:32:50] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-13 01:32:51] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Clicking Search button...
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying at least one admin user is displayed in the result table...
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 01:32:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Testcase passed: admin search by User Role 'Admin' returns correct data
+[2025-10-13 01:32:56] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to login page...
+[2025-10-13 01:32:56] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Logging in with username='Admin' and password='admin123'
+[2025-10-13 01:32:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Dashboard is visible
+[2025-10-13 01:32:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to Admin page...
+[2025-10-13 01:33:00] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:33:00] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Selecting Status = Enabled...
+[2025-10-13 01:33:00] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 01:33:00] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Clicking Search button...
+[2025-10-13 01:33:00] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:00] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Verifying that at least one Enabled account is displayed...
+[2025-10-13 01:33:01] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Enabled
+[2025-10-13 01:33:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Testcase passed: Admin search by Status 'Enabled' returns correct data
+[2025-10-13 01:33:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 01:33:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:33:07] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 01:33:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 01:33:10] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:33:10] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 01:33:10] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda
+[2025-10-13 01:33:10] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 01:33:10] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:10] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'manda user'...
+[2025-10-13 01:33:20] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Error verifying employee name: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-6952385444115626204\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-6952385444115626204\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-6952385444115626204\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-6952385444115626204\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-6952385444115626204\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[@role='rowgroup']//div[@role='row']//div[@role='cell' and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'manda user')]").first() to be visible
+
+[2025-10-13 01:33:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 01:33:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 01:33:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 01:33:29] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:33:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering Employee Name = manda akhil user
+[2025-10-13 01:33:29] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: Invalid Employee XYZ
+[2025-10-13 01:33:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Clicking Search...
+[2025-10-13 01:33:29] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Verifying invalid employee name message displayed...
+[2025-10-13 01:33:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 01:33:33] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to login page...
+[2025-10-13 01:33:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Logging in with Admin credentials...
+[2025-10-13 01:33:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying dashboard visibility...
+[2025-10-13 01:33:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to Admin page...
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Filling search fields: username='Admin', role='Admin', status='Enabled'
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Clicking Search button...
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying result contains user 'Admin' with role 'Admin' and status 'Enabled'
+[2025-10-13 01:33:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 01:33:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found employee name matching: Admin
+[2025-10-13 01:33:39] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Enabled
+[2025-10-13 01:33:39] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - ✅ Testcase passed: Search by Username + Role + Status works correctly.
+[2025-10-13 01:33:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Navigating to login page...
+[2025-10-13 01:33:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Logging in as Admin...
+[2025-10-13 01:33:46] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Navigating to Admin page...
+[2025-10-13 01:33:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:33:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Entering invalid employee name...
+[2025-10-13 01:33:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Clicking Search...
+[2025-10-13 01:33:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Verifying no results found...
+[2025-10-13 01:33:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 01:33:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to login page...
+[2025-10-13 01:33:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Logging in as Admin...
+[2025-10-13 01:33:55] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to Admin page...
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Filling search filters...
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda user
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Clicking Reset button...
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Reset button
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Verifying that all filters are cleared...
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Filters cleared check -> Username: '', Employee: '', Role: '-- Select --', Status: '-- Select --'
+[2025-10-13 01:33:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Testcase passed: Reset button clears all filters successfully.
+[2025-10-13 01:34:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to login page...
+[2025-10-13 01:34:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Logging in as Admin...
+[2025-10-13 01:34:04] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to Admin page...
+[2025-10-13 01:34:05] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:34:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Clicking Search without entering any filters...
+[2025-10-13 01:34:05] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:34:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Verifying that user list is displayed...
+[2025-10-13 01:34:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Testcase passed: Search without filters displays all users.
+[2025-10-13 01:34:47] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:34:47] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:34:52] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Navigating to login page...
+[2025-10-13 01:34:53] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Performing login with invalid username='wrongUser' and invalid password='wrongPass'
+[2025-10-13 01:34:55] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Getting error message from login page...
+[2025-10-13 01:34:55] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Verifying error message...
+[2025-10-13 01:34:55] [main] INFO  org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData - Testcase passed: login failed with invalid username and password
+[2025-10-13 01:35:11] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:35:11] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:35:16] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 01:35:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:35:19] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 01:35:20] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 01:35:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:35:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 01:35:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda
+[2025-10-13 01:35:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 01:35:21] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:35:21] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'manda user'...
+[2025-10-13 01:35:31] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Error verifying employee name: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-15810577705574823987\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-15810577705574823987\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-15810577705574823987\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-15810577705574823987\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-15810577705574823987\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[@role='rowgroup']//div[@role='row']//div[@role='cell' and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'manda user')]").first() to be visible
+
+[2025-10-13 01:38:07] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:38:07] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:38:12] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 01:38:13] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:38:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 01:38:16] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 01:38:18] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:38:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 01:38:18] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Entered Employee Name: manda
+[2025-10-13 01:38:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 01:38:18] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:38:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'manda user'...
+[2025-10-13 01:38:28] [main] ERROR org.example.hrmOrange.page.admin.AdminPage - Error verifying employee name: Error {
+  message='Timeout 10000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 10000ms exceeded.
+    at ProgressController.run (C:\Users\mytie\AppData\Local\Temp\playwright-java-7954710861971797132\package\lib\server\progress.js:78:26)
+    at Frame.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-7954710861971797132\package\lib\server\frames.js:619:23)
+    at FrameDispatcher.waitForSelector (C:\Users\mytie\AppData\Local\Temp\playwright-java-7954710861971797132\package\lib\server\dispatchers\frameDispatcher.js:105:103)
+    at FrameDispatcher._handleCommand (C:\Users\mytie\AppData\Local\Temp\playwright-java-7954710861971797132\package\lib\server\dispatchers\dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (C:\Users\mytie\AppData\Local\Temp\playwright-java-7954710861971797132\package\lib\server\dispatchers\dispatcher.js:361:39)
+}
+Call log:
+- waiting for locator("//div[@role='rowgroup']//div[@role='row']//div[@role='cell' and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'manda')]").first() to be visible
+
+[2025-10-13 01:42:21] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:42:21] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:42:26] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 01:42:27] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:42:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 01:42:30] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 01:42:31] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:42:31] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = manda akhil user
+[2025-10-13 01:44:30] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:44:30] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:44:35] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 01:44:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:44:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 01:44:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 01:44:40] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:44:40] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = test
+[2025-10-13 01:44:42] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected employee suggestion: test
+[2025-10-13 01:44:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 01:44:42] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:44:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'TestFirstName TestLastName'...
+[2025-10-13 01:44:42] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Employee name found in result table: TestFirstName
+[2025-10-13 01:44:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Testcase passed: search by Employee Name returns correct result
+[2025-10-13 01:44:57] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml"
+[2025-10-13 01:44:57] [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-13 01:44:57] [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+[2025-10-13 01:44:57] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml
+
+[2025-10-13 01:45:02] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to login page...
+[2025-10-13 01:45:03] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Logging in as Admin...
+[2025-10-13 01:45:06] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to Admin page...
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Entering valid username = 'Admin'...
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Selecting invalid role = 'ESS'...
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Clicking Search button...
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:45:07] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Verifying that no records are found...
+[2025-10-13 01:45:08] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Testcase passed: Searching with valid username and invalid role shows no results.
+[2025-10-13 01:45:12] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to login page...
+[2025-10-13 01:45:13] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:45:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying dashboard is visible...
+[2025-10-13 01:45:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to Admin page...
+[2025-10-13 01:45:17] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:45:17] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Searching for admin user...
+[2025-10-13 01:45:17] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:45:17] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying admin user is displayed in the result table...
+[2025-10-13 01:45:18] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Admin
+[2025-10-13 01:45:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Testcase passed: admin search by username 'Admin' returns correct data
+[2025-10-13 01:45:23] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-13 01:45:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:45:26] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-13 01:45:26] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Clicking Search button...
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying at least one admin user is displayed in the result table...
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 01:45:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Testcase passed: admin search by User Role 'Admin' returns correct data
+[2025-10-13 01:45:32] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to login page...
+[2025-10-13 01:45:33] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Logging in with username='Admin' and password='admin123'
+[2025-10-13 01:45:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Dashboard is visible
+[2025-10-13 01:45:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to Admin page...
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Selecting Status = Enabled...
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Clicking Search button...
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Verifying that at least one Enabled account is displayed...
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Enabled
+[2025-10-13 01:45:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Testcase passed: Admin search by Status 'Enabled' returns correct data
+[2025-10-13 01:45:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 01:45:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 01:45:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 01:45:44] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 01:45:46] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:45:46] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = test
+[2025-10-13 01:45:47] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected employee suggestion: test
+[2025-10-13 01:45:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 01:45:47] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:45:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'TestFirstName TestLastName'...
+[2025-10-13 01:45:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Employee name found in result table: TestFirstName
+[2025-10-13 01:45:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Testcase passed: search by Employee Name returns correct result
+[2025-10-13 01:45:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 01:45:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 01:45:56] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 01:45:58] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:45:58] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering Employee Name = manda akhil user
+[2025-10-13 01:46:32] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to login page...
+[2025-10-13 01:46:32] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Logging in with Admin credentials...
+[2025-10-13 01:46:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying dashboard visibility...
+[2025-10-13 01:46:35] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to Admin page...
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Filling search fields: username='Admin', role='Admin', status='Enabled'
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Clicking Search button...
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying result contains user 'Admin' with role 'Admin' and status 'Enabled'
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found employee name matching: Admin
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Enabled
+[2025-10-13 01:46:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - ✅ Testcase passed: Search by Username + Role + Status works correctly.
+[2025-10-13 01:46:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Navigating to login page...
+[2025-10-13 01:46:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Logging in as Admin...
+[2025-10-13 01:46:45] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Navigating to Admin page...
+[2025-10-13 01:46:47] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:46:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Entering invalid employee name...
+[2025-10-13 01:46:47] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:46:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Clicking Search...
+[2025-10-13 01:46:47] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:46:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Verifying no results found...
+[2025-10-13 01:46:47] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 01:46:51] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to login page...
+[2025-10-13 01:46:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Logging in as Admin...
+[2025-10-13 01:46:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to Admin page...
+[2025-10-13 01:46:56] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:46:56] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Filling search filters...
+[2025-10-13 01:46:56] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:46:56] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 01:47:30] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to login page...
+[2025-10-13 01:47:31] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Logging in as Admin...
+[2025-10-13 01:47:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to Admin page...
+[2025-10-13 01:47:35] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:47:35] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Clicking Search without entering any filters...
+[2025-10-13 01:47:36] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 01:47:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Verifying that user list is displayed...
+[2025-10-13 01:47:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Testcase passed: Search without filters displays all users.
+[2025-10-13 01:58:04] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 01:58:04] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 01:58:09] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 01:58:09] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 01:58:12] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 01:58:14] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 01:58:14] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering Employee Name = manda akhil user
+[2025-10-13 02:01:13] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 02:01:13] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 02:01:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 02:01:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 02:01:22] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 02:01:24] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:01:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering Employee Name = manda akhil user
+[2025-10-13 02:01:24] [main] WARN  org.example.hrmOrange.page.admin.AdminPage - No suggestion found for employee name: Invalid Employee XYZ
+[2025-10-13 02:01:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Clicking Search...
+[2025-10-13 02:01:24] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:01:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Verifying invalid employee name message displayed...
+[2025-10-13 02:01:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 02:01:30] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 02:01:30] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 02:01:35] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 02:01:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 02:01:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 02:01:39] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 02:01:41] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:01:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = test
+[2025-10-13 02:01:41] [main] WARN  org.example.hrmOrange.page.admin.AdminPage - No suggestion found for employee name: test
+[2025-10-13 02:01:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 02:01:41] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:01:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'TestFirstName TestLastName'...
+[2025-10-13 02:01:41] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Employee name found in result table: TestFirstName
+[2025-10-13 02:01:41] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Testcase passed: search by Employee Name returns correct result
+[2025-10-13 02:01:48] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[2025-10-13 02:01:48] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[2025-10-13 02:01:53] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to login page...
+[2025-10-13 02:01:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Logging in as Admin...
+[2025-10-13 02:01:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to Admin page...
+[2025-10-13 02:01:58] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:01:58] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Filling search filters...
+[2025-10-13 02:01:58] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:01:59] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 02:01:59] [main] WARN  org.example.hrmOrange.page.admin.AdminPage - No suggestion found for employee name: manda user
+[2025-10-13 02:01:59] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 02:01:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Clicking Reset button...
+[2025-10-13 02:01:59] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Reset button
+[2025-10-13 02:01:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Verifying that all filters are cleared...
+[2025-10-13 02:01:59] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Filters cleared check -> Username: '', Employee: '', Role: '-- Select --', Status: '-- Select --'
+[2025-10-13 02:01:59] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Testcase passed: Reset button clears all filters successfully.
+[2025-10-13 02:02:08] [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml"
+[2025-10-13 02:02:08] [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-13 02:02:08] [main] INFO  org.testng.internal.Utils - [XmlSuite] [WARN] 'parallel' value 'false' is no longer valid, defaulting to 'none'.
+[2025-10-13 02:02:08] [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\mytie\IdeaProjects\Playwright_demo\src\test\resources\suites\OrangeHRM_SearchFunction.xml
+
+[2025-10-13 02:02:14] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to login page...
+[2025-10-13 02:02:14] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Logging in as Admin...
+[2025-10-13 02:02:18] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Navigating to Admin page...
+[2025-10-13 02:02:19] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:02:19] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Entering valid username = 'Admin'...
+[2025-10-13 02:02:20] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:02:20] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Selecting invalid role = 'ESS'...
+[2025-10-13 02:02:20] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 02:02:20] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Clicking Search button...
+[2025-10-13 02:02:20] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:02:20] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Verifying that no records are found...
+[2025-10-13 02:02:20] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole - Testcase passed: Searching with valid username and invalid role shows no results.
+[2025-10-13 02:02:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to login page...
+[2025-10-13 02:02:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Performing login with username='Admin' and password='admin123'
+[2025-10-13 02:02:27] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying dashboard is visible...
+[2025-10-13 02:02:28] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Navigating to Admin page...
+[2025-10-13 02:02:30] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:02:30] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Searching for admin user...
+[2025-10-13 02:02:30] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:02:30] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Verifying admin user is displayed in the result table...
+[2025-10-13 02:02:30] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 3 record(s) with username = Admin
+[2025-10-13 02:02:30] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername - Testcase passed: admin search by username 'Admin' returns correct data
+[2025-10-13 02:02:33] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to login page...
+[2025-10-13 02:02:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Performing login with username='Admin' and password='admin123'
+[2025-10-13 02:02:36] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying dashboard is visible...
+[2025-10-13 02:02:37] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Navigating to Admin page...
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Selecting User Role = Admin
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Clicking Search button...
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Verifying at least one admin user is displayed in the result table...
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 02:02:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin - Testcase passed: admin search by User Role 'Admin' returns correct data
+[2025-10-13 02:02:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to login page...
+[2025-10-13 02:02:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Logging in with username='Admin' and password='admin123'
+[2025-10-13 02:02:46] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Dashboard is visible
+[2025-10-13 02:02:46] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Navigating to Admin page...
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Selecting Status = Enabled...
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Clicking Search button...
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Verifying that at least one Enabled account is displayed...
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Enabled
+[2025-10-13 02:02:48] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled - Testcase passed: Admin search by Status 'Enabled' returns correct data
+[2025-10-13 02:02:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to login page...
+[2025-10-13 02:02:52] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Performing login with username='Admin' and password='admin123'
+[2025-10-13 02:02:54] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying dashboard is visible...
+[2025-10-13 02:02:55] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Navigating to Admin page...
+[2025-10-13 02:02:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:02:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Entering Employee Name = test
+[2025-10-13 02:02:57] [main] WARN  org.example.hrmOrange.page.admin.AdminPage - No suggestion found for employee name: test
+[2025-10-13 02:02:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Clicking Search button...
+[2025-10-13 02:02:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:02:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Verifying result contains employee 'TestFirstName TestLastName'...
+[2025-10-13 02:02:57] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Employee name found in result table: TestFirstName
+[2025-10-13 02:02:57] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName - Testcase passed: search by Employee Name returns correct result
+[2025-10-13 02:03:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to login page...
+[2025-10-13 02:03:01] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Logging in as Admin...
+[2025-10-13 02:03:05] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Navigating to Admin page...
+[2025-10-13 02:03:06] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:03:06] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Entering Employee Name = manda akhil user
+[2025-10-13 02:03:06] [main] WARN  org.example.hrmOrange.page.admin.AdminPage - No suggestion found for employee name: Invalid Employee XYZ
+[2025-10-13 02:03:06] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Clicking Search...
+[2025-10-13 02:03:06] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:03:06] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Verifying invalid employee name message displayed...
+[2025-10-13 02:03:06] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 02:03:10] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to login page...
+[2025-10-13 02:03:10] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Logging in with Admin credentials...
+[2025-10-13 02:03:12] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying dashboard visibility...
+[2025-10-13 02:03:13] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Navigating to Admin page...
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Filling search fields: username='Admin', role='Admin', status='Enabled'
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = Admin
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Clicking Search button...
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - Verifying result contains user 'Admin' with role 'Admin' and status 'Enabled'
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 1 record(s) with username = Admin
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found employee name matching: Admin
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Found 2 record(s) with username = Enabled
+[2025-10-13 02:03:15] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions - ✅ Testcase passed: Search by Username + Role + Status works correctly.
+[2025-10-13 02:03:19] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Navigating to login page...
+[2025-10-13 02:03:19] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Logging in as Admin...
+[2025-10-13 02:03:23] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Navigating to Admin page...
+[2025-10-13 02:03:24] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:03:24] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Entering invalid employee name...
+[2025-10-13 02:03:25] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:03:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Clicking Search...
+[2025-10-13 02:03:25] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:03:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Verifying no results found...
+[2025-10-13 02:03:25] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName - Testcase passed: Searching with invalid employee name shows no data.
+[2025-10-13 02:03:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to login page...
+[2025-10-13 02:03:29] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Logging in as Admin...
+[2025-10-13 02:03:32] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Navigating to Admin page...
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Filling search filters...
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected User Role = ESS
+[2025-10-13 02:03:34] [main] WARN  org.example.hrmOrange.page.admin.AdminPage - No suggestion found for employee name: manda user
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Selected Status: Enabled
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Clicking Reset button...
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Reset button
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Verifying that all filters are cleared...
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Filters cleared check -> Username: '', Employee: '', Role: '-- Select --', Status: '-- Select --'
+[2025-10-13 02:03:34] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters - Testcase passed: Reset button clears all filters successfully.
+[2025-10-13 02:03:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to login page...
+[2025-10-13 02:03:38] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Logging in as Admin...
+[2025-10-13 02:03:42] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Navigating to Admin page...
+[2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Navigated to Admin page
+[2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Clicking Search without entering any filters...
+[2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
+[2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Verifying that user list is displayed...
+[2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Testcase passed: Search without filters displays all users.

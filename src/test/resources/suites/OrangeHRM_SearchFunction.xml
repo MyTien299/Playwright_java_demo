@@ -1,0 +1,9 @@
+<suite name="OrangeHRM Search Suite" parallel="false">
+
+    <test name="Search Function Test">
+        <packages>
+            <package name="org.example.hrmOrange.testcase.ui.admin"/>
+        </packages>
+    </test>
+
+</suite>

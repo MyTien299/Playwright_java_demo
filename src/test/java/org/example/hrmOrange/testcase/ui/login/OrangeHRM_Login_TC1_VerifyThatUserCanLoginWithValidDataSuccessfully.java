@@ -25,19 +25,27 @@ public class OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully
     @TestCaseID("OrangeHRM_TC01")
     @Test(description = "Verify that user can login with valid data successfully")
     public void loginWithValidUser() {
+        logger.info("Navigating to login page...");
         loginPage.navigateToLogin();
+
+        logger.info("Performing login with username='Admin'");
         loginPage.login("Admin", "admin123");
 
-        // Wait dashboard xuất hiện trước khi verify
+        // Wait dashboard appearing
+        logger.info("Waiting for dashboard to appear...");
         loginPage.waitForDashboard();
 
         // Verify Dashboard is visible
+        logger.info("Verifying dashboard is visible...");
         Assert.assertTrue(dashboardComponent.isAtDashboard(),
                 "Dashboard not displayed — login might have failed!");
 
         // Verify title
+        logger.info("Verifying dashboard title...");
         String actualTitle = dashboardComponent.getDashboardTitle();
         Assert.assertEquals(actualTitle.trim(), "Dashboard",
                 "Dashboard title mismatch!");
+
+        logger.info("Testcase passed: login successful and dashboard verified");
     }
 }

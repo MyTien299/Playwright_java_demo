@@ -22,14 +22,20 @@ public class OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword extends Bas
     @TestCaseID("OrangeHRM_TC02")
     @Test(description = "Verify that login fails when using a valid username but invalid password")
     public void loginWithInvalidPassword() {
+        logger.info("Navigating to login page...");
         loginPage.navigateToLogin();
+        logger.info("Performing login with username='Admin' and invalid password='wrongpass'");
         loginPage.login("Admin", "wrongpass");
 
         // Get error message from login page
+        logger.info("Getting error message from login page...");
         String errorMessage = loginPage.getErrorMessage();
 
         // Verify message
+        logger.info("Verifying error message...");
         Assert.assertTrue(errorMessage.contains("Invalid credentials"),
                 "Expected error message not shown when logging in with wrong password!");
+
+        logger.info("Testcase passed: login failed with invalid password");
     }
 }

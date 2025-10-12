@@ -22,15 +22,22 @@ public class OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData extends BaseTest 
     @TestCaseID("OrangeHRM_TC07")
     @Test(description = "Verify login fails when both username and password fields are empty")
     public void loginWithEmptyUsernameAndPassword() {
+        logger.info("Navigating to login page...");
         loginPage.navigateToLogin();
+
+        logger.info("Performing login with both empty username and password...");
         loginPage.login("", ""); // both empty username and password
 
+        logger.info("Getting error message from login page...");
         String usernameError = loginPage.getUsernameRequiredMessage();
         String passwordError = loginPage.getPasswordRequiredMessage();
 
+        logger.info("Verifying error message...");
         Assert.assertTrue(usernameError.contains("Required"),
                 "Expected 'Required' message not shown for empty username!");
         Assert.assertTrue(passwordError.contains("Required"),
                 "Expected 'Required' message not shown for empty password!");
+
+        logger.info("Testcase passed: login failed with both empty username and password");
     }
 }

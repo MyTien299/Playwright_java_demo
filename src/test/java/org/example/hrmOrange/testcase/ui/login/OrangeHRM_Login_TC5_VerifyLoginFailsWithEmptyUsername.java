@@ -22,11 +22,19 @@ public class OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername extends BaseT
     @TestCaseID("OrangeHRM_TC05")
     @Test(description = "Verify login fails when username field is empty")
     public void loginWithEmptyUsername() {
+        logger.info("Navigating to login page...");
         loginPage.navigateToLogin();
+
+        logger.info("Performing login with empty username='Admin' and valid password='admin123'");
         loginPage.login("", "admin123"); // empty username , valid password
 
+        logger.info("Getting error message from login page...");
         String errorMessage = loginPage.getRequiredMessage();
+
+        logger.info("Verifying error message...");
         Assert.assertTrue(errorMessage.contains("Required"),
                 "Expected 'Required' message not shown when username is empty!");
+
+        logger.info("Testcase passed: login failed with empty username");
     }
 }

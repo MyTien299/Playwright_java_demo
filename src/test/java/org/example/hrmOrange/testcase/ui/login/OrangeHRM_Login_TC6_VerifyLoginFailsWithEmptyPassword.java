@@ -22,11 +22,19 @@ public class OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword extends BaseT
     @TestCaseID("OrangeHRM_TC06")
     @Test(description = "Verify login fails when password field is empty")
     public void loginWithEmptyPassword() {
+        logger.info("Navigating to login page...");
         loginPage.navigateToLogin();
+
+        logger.info("Performing login with valid username='Admin' and empty password=''");
         loginPage.login("Admin", ""); //valid username, empty password
 
+        logger.info("Getting error message from login page...");
         String errorMessage = loginPage.getRequiredMessage();
+
+        logger.info("Verifying error message...");
         Assert.assertTrue(errorMessage.contains("Required"),
                 "Expected 'Required' message not shown when password is empty!");
+
+        logger.info("Testcase passed: login failed with empty password");
     }
 }
