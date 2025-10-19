@@ -1,0 +1,267 @@
+name: Automation Tests with Allure Reports
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    # Run tests daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Browser to run tests on'
+        required: false
+        default: 'chromium'
+        type: choice
+        options:
+          - chromium
+          - firefox
+          - webkit
+
+env:
+  MAVEN_VERSION: '3.9.5'
+  JAVA_VERSION: '24'
+  ALLURE_VERSION: '2.14.0'
+
+jobs:
+  test:
+    name: Run Automation Tests
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+        browser: [ chromium, firefox, webkit ]
+        exclude:
+          # Reduce matrix to save CI minutes - run all browsers on Ubuntu, specific ones on others
+          - os: windows-latest
+            browser: webkit
+          - os: macos-latest
+            browser: firefox
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 24
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+          cache: maven
+
+      - name: Install Playwright Browsers
+        run: |
+          mvn exec:java -Dexec.mainClass="com.microsoft.playwright.CLI" -Dexec.args="install ${{ matrix.browser }}"
+
+      - name: Run Tests on ${{ matrix.browser }}
+        run: |
+          mvn clean test \
+            -Dbrowser=${{ matrix.browser }} \
+            -Dheadless=true \
+            -Dparallel=true \
+            -DthreadCount=4
+        continue-on-error: true
+
+      - name: Generate Allure Report
+        if: always()
+        run: |
+          mvn allure:report -DhistoryDir=target/allure-history
+
+      - name: Publish Test Results
+        if: always()
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        with:
+          files: target/surefire-reports/*.xml
+          check_name: Test Results - ${{ matrix.os }} - ${{ matrix.browser }}
+          comment_mode: always
+
+      - name: Upload Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-${{ matrix.os }}-${{ matrix.browser }}
+          path: target/allure-results
+          retention-days: 30
+
+      - name: Upload Allure Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report-${{ matrix.os }}-${{ matrix.browser }}
+          path: target/allure-report
+          retention-days: 30
+
+      - name: Upload Test Logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-logs-${{ matrix.os }}-${{ matrix.browser }}
+          path: |
+            logs/
+            automation.log
+          retention-days: 30
+
+      - name: Upload Videos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-videos-${{ matrix.os }}-${{ matrix.browser }}
+          path: videos/
+          retention-days: 30
+
+  report:
+    name: Publish Allure Report
+    needs: test
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Download All Allure Results
+        uses: actions/download-artifact@v4
+        with:
+          path: allure-results-artifacts
+          pattern: allure-results-*
+
+      - name: Merge Allure Results
+        run: |
+          mkdir -p allure-results
+          find allure-results-artifacts -name "*.json" -type f -exec cp {} allure-results/ \;
+          find allure-results-artifacts -name "*.txt" -type f -exec cp {} allure-results/ \;
+
+      - name: Set up JDK 24
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: 'temurin'
+
+      - name: Generate Merged Allure Report
+        run: |
+          npm install -g allure-commandline
+          allure generate allure-results -o allure-report --clean
+
+      - name: Deploy Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report
+          destination_dir: reports/${{ github.run_number }}
+
+      - name: Comment PR with Report Link
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runNumber = context.runId;
+            const reportUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reports/${{ github.run_number }}/`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `📊 **Allure Test Report** - [View Report](${reportUrl})\n\nRun #${{ github.run_number }}`
+            });
+
+  notify:
+    name: Send Notifications
+    needs: [ test, report ]
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Determine Test Status
+        id: status
+        run: |
+          if [ "${{ needs.test.result }}" == "success" ]; then
+            echo "status=✅ PASSED" >> $GITHUB_OUTPUT
+            echo "color=good" >> $GITHUB_OUTPUT
+          else
+            echo "status=❌ FAILED" >> $GITHUB_OUTPUT
+            echo "color=danger" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Send Slack Notification
+        if: vars.SLACK_WEBHOOK_URL != ''
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          payload: |
+            {
+              "text": "Automation Test Run #${{ github.run_number }}",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Test Execution Report*\n${{ steps.status.outputs.status }}\n*Branch:* ${{ github.ref_name }}\n*Commit:* ${{ github.sha }}"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*View Report:* <https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reports/${{ github.run_number }}/|Allure Report>"
+                  }
+                }
+              ]
+            }
+
+      - name: Send Email Notification
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.EMAIL_SERVER }}
+          server_port: ${{ secrets.EMAIL_PORT }}
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "❌ Automation Tests Failed - Run #${{ github.run_number }}"
+          to: ${{ secrets.EMAIL_RECIPIENTS }}
+          from: "GitHub Actions <noreply@github.com>"
+          body: |
+            Test Execution Failed!
+            
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.sha }}
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            
+            View detailed report: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/reports/${{ github.run_number }}/
+
+  quality-gate:
+    name: Quality Gate Check
+    needs: test
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Download Test Results
+        uses: actions/download-artifact@v4
+        with:
+          path: test-artifacts
+          pattern: allure-results-*
+
+      - name: Check Test Results
+        run: |
+          TOTAL_TESTS=$(find test-artifacts -name "*.json" | wc -l)
+          echo "Total test results: $TOTAL_TESTS"
+          
+          if [ $TOTAL_TESTS -eq 0 ]; then
+            echo "❌ No test results found"
+            exit 1
+          fi
+
+      - name: Fail if Tests Failed
+        if: needs.test.result == 'failure'
+        run: |
+          echo "❌ Tests failed - Quality gate check failed"
+          exit 1
+
+      - name: Success Message
+        if: needs.test.result == 'success'
+        run: |
+          echo "✅ All tests passed - Quality gate check passed"
