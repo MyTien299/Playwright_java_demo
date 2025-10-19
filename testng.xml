@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Test Suite" parallel="false" verbose="2">
+    <test name="Login Tests">
+        <classes>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC9_VerifyLoginFailsWithPasswordLeadingSpace"/>
+            <class name="org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace"/>
+        </classes>
+    </test>
+    <test name="Admin Tests">
+        <classes>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC1_VerifySearchAdminByUsername"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC3_SearchByStatusEnabled"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC4_SearchByEmployeeName"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC5_SearchWithInvalidEmployee"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC6_SearchByMultipleConditions"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC7_SearchWithInvalidUserName"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters"/>
+            <class name="org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole"/>
+        </classes>
+    </test>
+</suite>
