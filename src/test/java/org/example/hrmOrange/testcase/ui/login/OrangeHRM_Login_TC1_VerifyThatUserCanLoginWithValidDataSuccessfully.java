@@ -1,51 +1,53 @@
 package org.example.hrmOrange.testcase.ui.login;
 
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.managers.PageManager;
-import org.example.hrmOrange.page.dashboard.DashboardComponent;
-import org.example.hrmOrange.page.login.LoginPage;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-import org.example.hrmOrange.annotation.TestCaseID;
+import io.qameta.allure.*;
+import io.qameta.allure.model.Status;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-public class OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully extends BaseTest {
+import org.example.hrmOrange.annotation.TestCaseID;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+@Story("Login with valid credentials")
+@Severity(SeverityLevel.CRITICAL)
+public class OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully extends BaseLoginTest {
     private static final Logger logger = LogManager.getLogger(OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully.class);
-    private LoginPage loginPage;
-    private DashboardComponent dashboardComponent;
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage();
-        dashboardComponent = new DashboardComponent(PageManager.getPage());
-    }
-
+    @Test
     @TestCaseID("OrangeHRM_TC01")
-    @Test(description = "Verify that user can login with valid data successfully")
+    @Description("Verify that user can successfully log in with valid credentials")
+    @Severity(SeverityLevel.CRITICAL)
     public void loginWithValidUser() {
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+        // Test Data
+        final String username = "Admin";
+        final String password = "admin123";
+        final String expectedTitle = "Dashboard";
 
-        logger.info("Performing login with username='Admin'");
-        loginPage.login("Admin", "admin123");
+        // Attach test data to report
+        Allure.addAttachment("Test Data", 
+            "Username: " + username + "\nPassword: " + password);
 
-        // Wait dashboard appearing
-        logger.info("Waiting for dashboard to appear...");
-        loginPage.waitForDashboard();
+        // Steps
+        logger.info("Step 1: Navigate to login page and enter credentials");
+        performLogin(username, password);
 
-        // Verify Dashboard is visible
-        logger.info("Verifying dashboard is visible...");
-        Assert.assertTrue(dashboardComponent.isAtDashboard(),
-                "Dashboard not displayed — login might have failed!");
+        logger.info("Step 2: Verify successful login");
+        verifySuccessfulLogin();
 
-        // Verify title
-        logger.info("Verifying dashboard title...");
-        String actualTitle = dashboardComponent.getDashboardTitle();
-        Assert.assertEquals(actualTitle.trim(), "Dashboard",
-                "Dashboard title mismatch!");
+        // Verification
+        logger.info("Verification: Check dashboard title");
+        String actualTitle = dashboardComponent.getDashboardTitle().trim();
+        
+        // Soft assertion for better reporting
+        try {
+            Assert.assertEquals(actualTitle, expectedTitle, "Dashboard title mismatch!");
+            logger.info("Verification passed: Dashboard title is as expected");
+            Allure.step("Verification: Dashboard title is '" + actualTitle + "' as expected");
+        } catch (AssertionError e) {
+            Allure.step("Verification failed: " + e.getMessage(), Status.FAILED);
+            throw e;
+        }
 
-        logger.info("Testcase passed: login successful and dashboard verified");
+        logger.info("Test case passed: User successfully logged in and dashboard verified");
+        Allure.step("Test case passed: User successfully logged in and dashboard verified");
     }
 }

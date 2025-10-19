@@ -1,4 +1,4 @@
-package org.example.hrmOrange.utils;
+package org.example.hrmOrange.allure;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
