@@ -17,15 +17,21 @@ public class BrowserFactory {
     public void createBrowser(String browserName) {
         playwright = Playwright.create();
         PageManager.setPlaywright(playwright);
-
         switch (browserName.toLowerCase().trim()) {
             case "chromium":
                 System.out.println("Create Chromium browser...");
-                browser = (PageManager.getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setHeadless(AppConfig.HEADLESS).setArgs(Arrays.asList("--start-maximized"))));
+                browser = (PageManager.getPlaywright().chromium()
+                        .launch(new BrowserType.LaunchOptions()
+                                .setHeadless(AppConfig.HEADLESS)
+                                .setArgs(Arrays.asList("--start-maximized","--no-sandbox","--disable-gpu","--disable-dev-shm-usage"))));
                 break;
             case "chrome":
                 System.out.println("Create Chrome browser...");
-                browser = (PageManager.getPlaywright().chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(AppConfig.HEADLESS).setArgs(Arrays.asList("--start-maximized"))));
+                browser = (PageManager.getPlaywright().chromium()
+                        .launch(new BrowserType.LaunchOptions()
+                                .setChannel("chrome")
+                                .setHeadless(AppConfig.HEADLESS)
+                                .setArgs(Arrays.asList("--start-maximized"))));
                 break;
             case "edge":
                 System.out.println("Create Edge browser...");
