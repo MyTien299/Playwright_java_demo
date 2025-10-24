@@ -2,7 +2,7 @@ package org.example.hrmOrange.managers;
 
 import org.example.hrmOrange.constants.AppConfig;
 import org.example.hrmOrange.page.dashboard.DashboardComponent;
-import org.example.hrmOrange.utils.LogUtils;
+import org.example.hrmOrange.allure.LogUtils;
 import com.microsoft.playwright.*;
 
 import java.nio.file.Paths;

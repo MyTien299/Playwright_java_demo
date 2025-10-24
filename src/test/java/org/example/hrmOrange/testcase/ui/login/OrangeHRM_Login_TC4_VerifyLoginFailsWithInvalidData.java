@@ -1,40 +1,52 @@
 package org.example.hrmOrange.testcase.ui.login;
 
-import org.example.hrmOrange.annotation.TestCaseID;
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.page.login.LoginPage;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import io.qameta.allure.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.hrmOrange.annotation.TestCaseID;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import io.qameta.allure.model.Status;
 
-public class OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData extends BaseTest {
+@Story("Login with invalid credentials")
+@Severity(SeverityLevel.NORMAL)
+public class OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData extends BaseLoginTest {
     private static final Logger logger = LogManager.getLogger(OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData.class);
-    private LoginPage loginPage;
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage();
-    }
-
+    @Test
     @TestCaseID("OrangeHRM_TC04")
-    @Test(description = "Verify that login fails when both username and password are invalid")
+    @Description("Verify that login fails when both username and password are invalid")
+    @Severity(SeverityLevel.NORMAL)
     public void loginWithInvalidUsernameAndPassword() {
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+        // Test Data
+        final String invalidUsername = "wrongUser";
+        final String invalidPassword = "wrongPass";
+        final String expectedErrorMessage = "Invalid credentials";
 
-        logger.info("Performing login with invalid username='wrongUser' and invalid password='wrongPass'");
-        loginPage.login("wrongUser", "wrongPass"); // both invalid username and password
+        // Attach test data to report
+        Allure.addAttachment("Test Data", 
+            "Username: " + invalidUsername + "\nPassword: " + invalidPassword);
 
-        logger.info("Getting error message from login page...");
-        String errorMessage = loginPage.getErrorMessage();
+        // Steps
+        logger.info("Step 1: Navigate to login page and enter invalid credentials");
+        performLogin(invalidUsername, invalidPassword);
 
-        logger.info("Verifying error message...");
-        Assert.assertTrue(errorMessage.contains("Invalid credentials"),
-                "Expected 'Invalid credentials' message not shown for invalid username & password!");
+        // Verification
+        logger.info("Step 2: Verify error message is displayed");
+        String actualErrorMessage = loginPage.getErrorMessage();
+        
+        try {
+            Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
+                "Expected error message not shown for invalid username & password!");
+            
+            logger.info("Verification passed: Correct error message is displayed");
+            Allure.step("Verification: Error message contains '" + expectedErrorMessage + "'");
+        } catch (AssertionError e) {
+            Allure.step("Verification failed: " + e.getMessage(), Status.FAILED);
+            throw e;
+        }
 
-        logger.info("Testcase passed: login failed with invalid username and password");
+        logger.info("Test case passed: Login failed with invalid credentials as expected");
+        Allure.step("Test case passed: Login failed with invalid credentials as expected");
     }
 }

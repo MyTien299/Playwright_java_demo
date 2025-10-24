@@ -1,6 +1,6 @@
 package org.example.hrmOrange.helpers;
 
-import org.example.hrmOrange.utils.LogUtils;
+import org.example.hrmOrange.allure.LogUtils;
 
 import java.io.*;
 import java.nio.file.Files;

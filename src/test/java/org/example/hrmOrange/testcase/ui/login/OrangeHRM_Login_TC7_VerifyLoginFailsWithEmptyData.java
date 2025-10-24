@@ -1,43 +1,59 @@
 package org.example.hrmOrange.testcase.ui.login;
 
-import org.example.hrmOrange.annotation.TestCaseID;
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.page.login.LoginPage;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import io.qameta.allure.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.hrmOrange.annotation.TestCaseID;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import io.qameta.allure.model.Status;
 
-public class OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData extends BaseTest {
+@Story("Login with empty fields")
+@Severity(SeverityLevel.NORMAL)
+public class OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData extends BaseLoginTest {
     private static final Logger logger = LogManager.getLogger(OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData.class);
-    private LoginPage loginPage;
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage();
-    }
-
+    @Test
     @TestCaseID("OrangeHRM_TC07")
-    @Test(description = "Verify login fails when both username and password fields are empty")
+    @Description("Verify that login fails when both username and password fields are empty")
+    @Severity(SeverityLevel.NORMAL)
     public void loginWithEmptyUsernameAndPassword() {
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+        // Test Data
+        final String emptyUsername = "";
+        final String emptyPassword = "";
+        final String expectedErrorMessage = "Required";
 
-        logger.info("Performing login with both empty username and password...");
-        loginPage.login("", ""); // both empty username and password
+        // Attach test data to report
+        Allure.addAttachment("Test Data", 
+            "Username: [EMPTY]\nPassword: [EMPTY]");
 
-        logger.info("Getting error message from login page...");
+        // Steps
+        logger.info("Step 1: Navigate to login page and leave both fields empty");
+        performLogin(emptyUsername, emptyPassword);
+
+        // Verification
+        logger.info("Step 2: Verify required field messages are displayed");
         String usernameError = loginPage.getUsernameRequiredMessage();
         String passwordError = loginPage.getPasswordRequiredMessage();
-
-        logger.info("Verifying error message...");
-        Assert.assertTrue(usernameError.contains("Required"),
+        
+        try {
+            // Verify username error message
+            Assert.assertTrue(usernameError.contains(expectedErrorMessage),
                 "Expected 'Required' message not shown for empty username!");
-        Assert.assertTrue(passwordError.contains("Required"),
+            Allure.step("Verification: Username error message contains '" + expectedErrorMessage + "'");
+            
+            // Verify password error message
+            Assert.assertTrue(passwordError.contains(expectedErrorMessage),
                 "Expected 'Required' message not shown for empty password!");
+            Allure.step("Verification: Password error message contains '" + expectedErrorMessage + "'");
+            
+            logger.info("Verification passed: Required field messages are displayed");
+        } catch (AssertionError e) {
+            Allure.step("Verification failed: " + e.getMessage(), Status.FAILED);
+            throw e;
+        }
 
-        logger.info("Testcase passed: login failed with both empty username and password");
+        logger.info("Test case passed: Login failed with empty username and password as expected");
+        Allure.step("Test case passed: Login failed with empty username and password as expected");
     }
 }
