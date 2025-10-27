@@ -1296,3 +1296,35 @@ Call log:
 [2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
 [2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Verifying that user list is displayed...
 [2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Testcase passed: Search without filters displays all users.
+[37m[2025-10-27 21:56:04] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\anhkh\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-10-27 21:56:05] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-10-27 21:56:05] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-10-27 21:56:05] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\anhkh\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-10-27 21:58:18] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mNavigating to login page...
+[0m[37m[2025-10-27 21:58:19] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mPerforming login with username='Admin' and password='admin123'
+[0m[37m[2025-10-27 21:58:22] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mVerifying dashboard is visible...
+[0m[37m[2025-10-27 21:58:22] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mNavigating to Admin page...
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.page.admin.AdminPage [37m-[37m [32mNavigated to Admin page
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mSelecting User Role = Admin
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.page.admin.AdminPage [37m-[37m [32mSelected User Role = Admin
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mClicking Search button...
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.page.admin.AdminPage [37m-[37m [32mClicked Search button
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mVerifying at least one admin user is displayed in the result table...
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.page.admin.AdminPage [37m-[37m [32mFound 1 record(s) with username = Admin
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC2_SearchByUserRoleAdmin [37m-[37m [32mTestcase passed: admin search by User Role 'Admin' returns correct data
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports
+[0m[37m[2025-10-27 21:58:24] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: D:\Task\Playwright_java_demo\target\site\allure-maven-plugin
+[0m[37m[2025-10-27 21:58:42] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: D:\Task\Playwright_java_demo\target\site\allure-maven-plugin
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: D:\Task\Playwright_java_demo\target\allure-report
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-10-27\common_215842
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: D:\Task\Playwright_java_demo\target\allure-report
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: D:\Task\Playwright_java_demo\reports\2025-10-27\common_215842
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: D:\Task\Playwright_java_demo\reports\2025-10-27\index.html
+[0m[37m[2025-10-27 21:58:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: D:\Task\Playwright_java_demo\reports
+[0m

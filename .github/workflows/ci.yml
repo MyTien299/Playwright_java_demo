@@ -2,9 +2,9 @@ name: Playwright Java Tests (CI)
 
 on:
   push:
-    branches: [ ci/cd_pipeline ]
+    branches: [ main ]
   pull_request:
-    branches: [ ci/cd_pipeline ]
+    branches: [ main ]
 
 jobs:
   test:
