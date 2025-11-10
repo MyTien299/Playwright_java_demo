@@ -1296,3 +1296,434 @@ Call log:
 [2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.page.admin.AdminPage - Clicked Search button
 [2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Verifying that user list is displayed...
 [2025-10-13 02:03:43] [main] INFO  org.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters - Testcase passed: Search without filters displays all users.
+[37m[2025-11-10 13:55:37] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 13:55:37] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 13:55:37] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 13:55:37] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 13:55:50] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mStep 1: Navigate to login page and enter credentials
+[0m[37m[2025-11-10 13:55:54] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mStep 2: Verify successful login
+[0m[37m[2025-11-10 13:56:10] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 13:56:10] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports
+[0m[37m[2025-11-10 13:56:10] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 18:19:32] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 18:19:32] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 18:19:32] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 18:19:32] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 18:19:32] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 18:19:38] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mStep 1: Navigate to login page and enter credentials
+[0m[37m[2025-11-10 18:19:41] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mStep 2: Verify successful login
+[0m[37m[2025-11-10 18:19:42] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mVerification: Check dashboard title
+[0m[37m[2025-11-10 18:19:42] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mVerification passed: Dashboard title is as expected
+[0m[37m[2025-11-10 18:19:42] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mTest case passed: User successfully logged in and dashboard verified
+[0m[37m[2025-11-10 18:19:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 18:19:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 18:19:48] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_181948
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_181948
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 18:19:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:35:30] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:35:31] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:35:31] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:35:31] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:35:34] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:35:37] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters [37m-[37m [32mNavigating to login page...
+[0m[37m[2025-11-10 20:35:37] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:35:38] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters [37m-[37m [32mLogging in as Admin...
+[0m[37m[2025-11-10 20:35:38] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:35:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:35:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123
+[0m[37m[2025-11-10 20:35:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:35:49] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:35:49] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:35:58] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_203558
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_203558
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:35:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:36:33] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:36:34] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:36:34] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:36:34] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:36:34] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:36:37] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:36:44] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters [37m-[37m [32mNavigating to login page...
+[0m[37m[2025-11-10 20:36:44] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:36:45] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters [37m-[37m [32mLogging in as Admin...
+[0m[37m[2025-11-10 20:36:45] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:36:46] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:36:46] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123
+[0m[37m[2025-11-10 20:36:46] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:36:56] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:36:56] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:37:01] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_203701
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_203701
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:37:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:39:24] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:39:24] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:39:24] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:39:24] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:39:24] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:39:28] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:39:31] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters [37m-[37m [32mNavigating to login page...
+[0m[37m[2025-11-10 20:39:31] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:39:31] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.admin.OrangeHRM_Admin_TC9_SearchWithoutFilters [37m-[37m [32mLogging in as Admin...
+[0m[37m[2025-11-10 20:39:31] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:39:32] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:39:32] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123
+[0m[37m[2025-11-10 20:39:32] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:39:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:39:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:39:54] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_203954
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_203954
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:39:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:42:09] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:42:27] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:42:35] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:43:16] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:44:06] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:52:25] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:52:26] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:52:26] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:52:26] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:52:29] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:52:37] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mStep 1: Navigate to login page and enter credentials
+[0m[37m[2025-11-10 20:52:37] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:52:38] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:52:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:52:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123
+[0m[37m[2025-11-10 20:52:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:52:40] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mStep 2: Verify successful login
+[0m[37m[2025-11-10 20:52:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //h6[normalize-space()='Dashboard']
+[0m[37m[2025-11-10 20:52:41] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mVerify visible: //h6[normalize-space()='Dashboard'] → true
+[0m[37m[2025-11-10 20:52:41] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mVerification: Check dashboard title
+[0m[37m[2025-11-10 20:52:41] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mVerification passed: Dashboard title is as expected
+[0m[37m[2025-11-10 20:52:41] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully [37m-[37m [32mTest case passed: User successfully logged in and dashboard verified
+[0m[37m[2025-11-10 20:52:41] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:52:41] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:52:47] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205247
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205247
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:52:47] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:53:50] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:53:50] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:53:50] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:53:50] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:53:50] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:53:53] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:53:57] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword [37m-[37m [32mStep 1: Navigate to login page and enter invalid password
+[0m[37m[2025-11-10 20:53:57] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:53:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:53:59] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:53:59] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: wrongpass
+[0m[37m[2025-11-10 20:53:59] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:54:00] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword [37m-[37m [32mStep 2: Verify error message is displayed
+[0m[37m[2025-11-10 20:54:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //div[@role='alert']
+[0m[37m[2025-11-10 20:54:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//div[@role='alert']] = Invalid credentials
+[0m[37m[2025-11-10 20:54:01] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword [37m-[37m [32mVerification passed: Correct error message is displayed
+[0m[37m[2025-11-10 20:54:01] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword [37m-[37m [32mTest case passed: Login failed with invalid password as expected
+[0m[37m[2025-11-10 20:54:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:54:01] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:54:09] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205409
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205409
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:54:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:54:33] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:54:33] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:54:33] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:54:33] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:54:33] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:54:36] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:54:39] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername [37m-[37m [32mStep 1: Navigate to login page and enter invalid username
+[0m[37m[2025-11-10 20:54:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:54:39] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:54:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: WrongUser
+[0m[37m[2025-11-10 20:54:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123
+[0m[37m[2025-11-10 20:54:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:54:42] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername [37m-[37m [32mStep 2: Verify error message is displayed
+[0m[37m[2025-11-10 20:54:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //div[@role='alert']
+[0m[37m[2025-11-10 20:54:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//div[@role='alert']] = Invalid credentials
+[0m[37m[2025-11-10 20:54:43] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername [37m-[37m [32mVerification passed: Correct error message is displayed
+[0m[37m[2025-11-10 20:54:43] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC3_VerifyLoginFailsWithInvalidUsername [37m-[37m [32mTest case passed: Login failed with invalid username as expected
+[0m[37m[2025-11-10 20:54:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:54:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:54:48] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205448
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205448
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:54:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:55:00] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:55:00] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:55:00] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:55:00] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:55:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:55:03] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:55:09] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData [37m-[37m [32mStep 1: Navigate to login page and enter invalid credentials
+[0m[37m[2025-11-10 20:55:09] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:55:10] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:55:12] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: wrongUser
+[0m[37m[2025-11-10 20:55:12] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: wrongPass
+[0m[37m[2025-11-10 20:55:12] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:55:13] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData [37m-[37m [32mStep 2: Verify error message is displayed
+[0m[37m[2025-11-10 20:55:13] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //div[@role='alert']
+[0m[37m[2025-11-10 20:55:14] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//div[@role='alert']] = Invalid credentials
+[0m[37m[2025-11-10 20:55:14] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData [37m-[37m [32mVerification passed: Correct error message is displayed
+[0m[37m[2025-11-10 20:55:14] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC4_VerifyLoginFailsWithInvalidData [37m-[37m [32mTest case passed: Login failed with invalid credentials as expected
+[0m[37m[2025-11-10 20:55:14] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:55:14] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:55:19] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205519
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205519
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:55:19] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:55:34] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:55:34] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:55:34] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:55:34] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:55:34] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:55:37] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:55:53] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername [37m-[37m [32mStep 1: Navigate to login page and leave username empty
+[0m[37m[2025-11-10 20:55:53] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:55:54] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: 
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername [37m-[37m [32mStep 2: Verify required field message is displayed
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //span[contains(@class,'oxd-input-field-error-message')]
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//span[contains(@class,'oxd-input-field-error-message')]] = Required
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername [37m-[37m [32mVerification passed: Required field message is displayed
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC5_VerifyLoginFailsWithEmptyUsername [37m-[37m [32mTest case passed: Login failed with empty username as expected
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:55:55] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:56:00] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205600
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205600
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:56:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:56:07] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:56:08] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:56:08] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:56:08] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:56:08] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:56:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:56:16] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword [37m-[37m [32mStep 1: Navigate to login page and leave password empty
+[0m[37m[2025-11-10 20:56:16] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:56:16] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: 
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword [37m-[37m [32mStep 2: Verify required field message is displayed
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //span[contains(@class,'oxd-input-field-error-message')]
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//span[contains(@class,'oxd-input-field-error-message')]] = Required
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword [37m-[37m [32mVerification passed: Required field message is displayed
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC6_VerifyLoginFailsWithEmptyPassword [37m-[37m [32mTest case passed: Login failed with empty password as expected
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:56:21] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:56:26] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205626
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205626
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:56:26] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:56:35] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:56:36] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:56:36] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:56:36] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:56:36] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:56:38] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:56:42] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData [37m-[37m [32mStep 1: Navigate to login page and leave both fields empty
+[0m[37m[2025-11-10 20:56:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:56:42] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: 
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: 
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData [37m-[37m [32mStep 2: Verify required field messages are displayed
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//input[@name='username']/ancestor::div[contains(@class,'oxd-input-group')]//span] = Required
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//input[@name='password']/ancestor::div[contains(@class,'oxd-input-group')]//span] = Required
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData [37m-[37m [32mVerification passed: Required field messages are displayed
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC7_VerifyLoginFailsWithEmptyData [37m-[37m [32mTest case passed: Login failed with empty username and password as expected
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:56:43] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:56:48] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205648
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205648
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:56:48] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:56:57] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:56:57] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:56:57] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:56:57] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:56:57] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:57:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:57:03] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace [37m-[37m [32mStep 1: Navigate to login page and enter username with leading space
+[0m[37m[2025-11-10 20:57:03] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:57:03] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:57:04] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with:  Admin
+[0m[37m[2025-11-10 20:57:04] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123
+[0m[37m[2025-11-10 20:57:04] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:57:05] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace [37m-[37m [32mStep 2: Verify error message is displayed
+[0m[37m[2025-11-10 20:57:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //div[@role='alert']
+[0m[37m[2025-11-10 20:57:06] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//div[@role='alert']] = Invalid credentials
+[0m[37m[2025-11-10 20:57:06] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace [37m-[37m [32mVerification passed: Correct error message is displayed
+[0m[37m[2025-11-10 20:57:06] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC8_VerifyThatUserCanLoginWithUsernameHavingLeadingSpace [37m-[37m [32mTest case passed: Login failed with username having leading space as expected
+[0m[37m[2025-11-10 20:57:06] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:57:06] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:57:11] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205711
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205711
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:57:11] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:57:25] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:57:25] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:57:25] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:57:25] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:57:25] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:57:28] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:57:32] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC9_VerifyLoginFailsWithPasswordLeadingSpace [37m-[37m [32mStep 1: Navigate to login page and enter password with leading space
+[0m[37m[2025-11-10 20:57:32] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:57:32] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:57:33] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:57:33] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with:  admin123
+[0m[37m[2025-11-10 20:57:33] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:57:35] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC9_VerifyLoginFailsWithPasswordLeadingSpace [37m-[37m [32mStep 2: Verify error message is displayed
+[0m[37m[2025-11-10 20:57:35] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //div[@role='alert']
+[0m[37m[2025-11-10 20:57:36] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//div[@role='alert']] = Invalid credentials
+[0m[37m[2025-11-10 20:57:36] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC9_VerifyLoginFailsWithPasswordLeadingSpace [37m-[37m [32mVerification passed: Correct error message is displayed
+[0m[37m[2025-11-10 20:57:36] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC9_VerifyLoginFailsWithPasswordLeadingSpace [37m-[37m [32mTest case passed: Login failed with password having leading space as expected
+[0m[37m[2025-11-10 20:57:36] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:57:36] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:57:40] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205740
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205740
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:57:40] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m[37m[2025-11-10 20:57:50] [34m[DEBUG][37m [32morg.testng.TestNG [37m-[37m [32msuiteXmlPath: "C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml"
+[0m[37m[2025-11-10 20:57:50] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.beforeSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:57:50] [34m[WARN ][37m [32morg.testng.internal.Configuration [37m-[37m [32mDetected a static method [org.example.hrmOrange.common.BaseTest.afterSuite()]. Static configuration methods can cause unexpected behavior.
+[0m[37m[2025-11-10 20:57:50] [34m[INFO ][37m [32morg.testng.internal.Utils [37m-[37m [32m[TestNG] Running:
+  C:\Users\mytie\AppData\Local\JetBrains\IntelliJIdea2025.2\temp-testng-customsuite.xml
+
+[0m[37m[2025-11-10 20:57:50] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRemoved old report
+[0m[37m[2025-11-10 20:57:53] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:57:56] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace [37m-[37m [32mStep 1: Navigate to login page and enter password with trailing space
+[0m[37m[2025-11-10 20:57:56] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mNavigate to URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[0m[37m[2025-11-10 20:57:56] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //input[@name='username']
+[0m[37m[2025-11-10 20:57:57] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='username'] with: Admin
+[0m[37m[2025-11-10 20:57:57] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mFill input //input[@name='password'] with: admin123 
+[0m[37m[2025-11-10 20:57:57] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mClick element: //button[@type='submit']
+[0m[37m[2025-11-10 20:57:58] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace [37m-[37m [32mStep 2: Verify error message is displayed
+[0m[37m[2025-11-10 20:57:58] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mWait until visible: //div[@role='alert']
+[0m[37m[2025-11-10 20:58:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.LogUtils [37m-[37m [32mText from element [//div[@role='alert']] = Invalid credentials
+[0m[37m[2025-11-10 20:58:00] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace [37m-[37m [32mVerification passed: Correct error message is displayed
+[0m[37m[2025-11-10 20:58:00] [34m[INFO ][37m [32morg.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace [37m-[37m [32mTest case passed: Login failed with password having trailing space as expected
+[0m[37m[2025-11-10 20:58:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mStarting Allure report generation...
+[0m[37m[2025-11-10 20:58:00] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mRunning: mvn allure:report
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mLooking for Allure report at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:58:05] [34m[WARN ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m⚠️ Allure report directory not found at: C:\Users\mytie\IdeaProjects\Playwright_demo\target\site\allure-maven-plugin
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mChecking alternative location: target/allure-report
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mFound report at alternative location: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCreated directory reports\2025-11-10\common_205805
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report from: C:\Users\mytie\IdeaProjects\Playwright_demo\target\allure-report
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mCopying report to: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\common_205805
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Report copied successfully!
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32mIndex file created at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports\2025-11-10\index.html
+[0m[37m[2025-11-10 20:58:05] [34m[INFO ][37m [32morg.example.hrmOrange.allure.AllureReportUtils [37m-[37m [32m✅ Allure Report generated successfully at: C:\Users\mytie\IdeaProjects\Playwright_demo\reports
+[0m

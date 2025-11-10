@@ -21,9 +21,9 @@ public class OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters extends BaseTest
     @BeforeMethod
     public void setUp() {
         super.setUp();
-        loginPage = new LoginPage();
+        loginPage = new LoginPage(webKeyword);
         dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage();
+        adminPage = new AdminPage(webKeyword);
     }
 
     @TestCaseID("OrangeHRM_TC18")

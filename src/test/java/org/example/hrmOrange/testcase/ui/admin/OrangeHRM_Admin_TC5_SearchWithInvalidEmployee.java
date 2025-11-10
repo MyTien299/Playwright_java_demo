@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.example.hrmOrange.annotation.TestCaseID;
 import org.example.hrmOrange.common.BaseTest;
+import org.example.hrmOrange.keywords.WebKeyword;
 import org.example.hrmOrange.managers.PageManager;
 import org.example.hrmOrange.page.admin.AdminPage;
 import org.example.hrmOrange.page.dashboard.DashboardComponent;
@@ -21,9 +22,9 @@ public class OrangeHRM_Admin_TC5_SearchWithInvalidEmployee extends BaseTest{
     @BeforeMethod
     public void setUp() {
         super.setUp();
-        loginPage = new LoginPage();
+        loginPage = new LoginPage(webKeyword);
         dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage();
+        adminPage = new AdminPage(webKeyword);
     }
 
     @TestCaseID("OrangeHRM_TC15")

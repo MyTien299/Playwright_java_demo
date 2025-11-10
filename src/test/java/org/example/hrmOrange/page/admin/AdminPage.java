@@ -6,10 +6,10 @@ import com.microsoft.playwright.options.WaitForSelectorState;
 import org.example.hrmOrange.managers.PageManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.hrmOrange.keywords.WebKeyword;
 
 public class AdminPage {
-    private final Page page;
-    private static final Logger logger = LogManager.getLogger(AdminPage.class);
+    private final WebKeyword webKeyword;
 
     // --- Locators ---
     private final String adminMenu = "//span[normalize-space()='Admin']";
@@ -23,111 +23,90 @@ public class AdminPage {
     private final String tableRows = "//div[contains(@class,'oxd-table-row')]";
     private final String firstRowUsername = "//div[@class='oxd-table-body']/div[1]//div[2]";
 
-    public AdminPage() {
-        this.page = PageManager.getPage();
+    public AdminPage(WebKeyword webKeyword) {
+        this.webKeyword = webKeyword;
     }
 
     // --- Navigation ---
     public void navigateToAdmin() {
-        page.click(adminMenu);
-        page.waitForSelector(usernameField);
-        logger.info("Navigated to Admin page");
+        webKeyword.click(adminMenu);
+        webKeyword.waitUntilVisible(usernameField, 5000);
     }
 
     // --- Actions ---
     public void searchAdminByUsername(String username) {
-        page.fill(usernameField, username);
-        page.click(searchButton);
-
         try {
-            page.locator("//button[normalize-space()='Search']").click();
-            logger.info("Clicked Search button");
+            webKeyword.fill(usernameField, username);
+            webKeyword.click(searchButton);
 
             // Chờ bảng kết quả hiển thị hoặc "No Records Found"
-            page.waitForSelector("//div[@role='table'] | //span[normalize-space()='No Records Found']",
-                    new Page.WaitForSelectorOptions().setTimeout(10000));
+            webKeyword.waitUntilVisible("//div[@role='table'] | //span[normalize-space()='No Records Found']", 10000);
 
         } catch (Exception e) {
-            logger.error("Error while searching user by username: " + username, e);
+            throw new RuntimeException("Error while searching user by username: " + username, e);
         }
     }
 
     public void selectUserRole(String role) {
         try {
-            Locator dropdown = page.locator(userRoleDropdown);
-            dropdown.waitFor(new Locator.WaitForOptions().setTimeout(8000));
-            dropdown.click();
+            webKeyword.click(userRoleDropdown);
+            String optionXpath = "//div[@role='option']//span[normalize-space()='" + role + "']";
+            webKeyword.click(optionXpath);
 
-            Locator option = page.locator("//div[@role='option']//span[normalize-space()='" + role + "']");
-            option.waitFor(new Locator.WaitForOptions().setTimeout(5000));
-            option.click();
-
-            logger.info("Selected User Role = " + role);
         } catch (Exception e) {
-            logger.error("Failed to select User Role '" + role + "': " + e.getMessage());
-            throw e;
+            throw new RuntimeException("Error while searching user by username: " + role, e);
         }
     }
 
     public void selectStatus(String status) {
         try {
-            Locator statusDropdown = page.locator("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[@class='oxd-select-text-input']");
+            webKeyword.click("//label[normalize-space()='Status']/ancestor::div[contains(@class,'oxd-input-group')]//div[@class='oxd-select-text-input']");
 
-            statusDropdown.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
-            statusDropdown.click();
-
-            Locator option = page.locator(String.format("//div[@role='listbox']//span[normalize-space()='%s']", status));
-            option.waitFor(new Locator.WaitForOptions().setState(WaitForSelectorState.VISIBLE));
-            option.click();
-
-            logger.info("Selected Status: " + status);
+            String optionXpath = String.format("//div[@role='listbox']//span[normalize-space()='%s']", status);
+            webKeyword.click(optionXpath);
         } catch (Exception e) {
-            logger.error("Failed to select Status '" + status + "': " + e.getMessage(), e);
-            throw e;
+            throw new RuntimeException("Failed to select Status '" + status + "': " + e.getMessage(), e);
         }
     }
 
 
 
     public void clickSearch() {
-        page.click(searchButton);
-        logger.info("Clicked Search button");
+        webKeyword.click(searchButton);
     }
 
     public void clickReset() {
-        page.click(resetButton);
-        logger.info("Clicked Reset button");
+        webKeyword.click(resetButton);
     }
 
 
     public boolean isAdminDisplayedInTable(String username) {
-        Locator usernameCell = page.locator("//div[normalize-space(text())='" + username + "']");
         try {
-            usernameCell.first().waitFor(new Locator.WaitForOptions().setTimeout(10000));
-            int count = usernameCell.count();
-            logger.info("Found " + count + " record(s) with username = " + username);
+            String xpath = "//div[normalize-space(text())='" + username + "']";
+            webKeyword.waitUntilVisible(xpath, 10000);
+            int count = webKeyword.count(xpath);
             return count > 0;
         } catch (Exception e) {
-            logger.warn("Username not found: " + e.getMessage());
-            return false;
+            throw new RuntimeException("Username not found: " + e.getMessage());
         }
+
     }
 
     public void enterEmployeeName(String employeeName) {
-        Locator input = page.locator("//input[@placeholder='Type for hints...']");
-        input.fill(employeeName);
+        String inputXpath = "//input[@placeholder='Type for hints...']";
+        webKeyword.fill(inputXpath, employeeName);
 
-        Locator suggestion = page.locator(String.format(
+        String suggestionXpath = String.format(
                 "//div[@role='listbox']//span[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '%s')]",
                 employeeName.toLowerCase()
-        ));
+        );
 
-        if (suggestion.count() > 0) {
-            suggestion.first().click();
-            logger.info("Selected employee suggestion: " + employeeName);
+        if (webKeyword.count(suggestionXpath) > 0) {
+            webKeyword.click(suggestionXpath);
         } else {
-            logger.warn("No suggestion found for employee name: " + employeeName);
+            throw new RuntimeException("No suggestion found for employee name: " + employeeName);
         }
+
     }
 
 
@@ -136,72 +115,63 @@ public class AdminPage {
         try {
             String xpath = "//div[@role='rowgroup']//div[@role='row']//div[@role='cell' and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '"
                     + employeeName.toLowerCase() + "')]";
-            Locator cell = page.locator(xpath).first();
-            cell.waitFor(new Locator.WaitForOptions().setTimeout(10000));
-            logger.info("Found employee name matching: " + employeeName);
-            return cell.isVisible();
+            webKeyword.waitUntilVisible(xpath, 10000);
+            return webKeyword.isVisible(xpath);
         } catch (Exception e) {
-            logger.error("Error verifying employee name: " + e.getMessage());
-            return false;
+            throw new RuntimeException("Error verifying employee name: " + e.getMessage());
         }
     }
 
     public boolean isNoRecordFound() {
         try {
-            Locator noRecordText = page.locator("//span[normalize-space()='No Records Found']");
-            noRecordText.waitFor(new Locator.WaitForOptions().setTimeout(5000));
-            return noRecordText.isVisible();
+            String xpath = "//span[normalize-space()='No Records Found']";
+            webKeyword.waitUntilVisible(xpath, 5000);
+            return webKeyword.isVisible(xpath);
         } catch (Exception e) {
-            logger.error("No 'No Records Found' message detected.", e);
-            return false;
+            throw new RuntimeException("No 'No Records Found' message detected: " + e.getMessage());
         }
+
     }
 
     public boolean isEmployeeInvalidMessageVisible() {
-        Locator invalidMsg = page.locator("//span[contains(@class, 'oxd-input-field-error-message') and text()='Invalid']");
+        String xpath = "//span[contains(@class, 'oxd-input-field-error-message') and text()='Invalid']";
         try {
-            invalidMsg.waitFor(new Locator.WaitForOptions().setTimeout(5000));
-            return invalidMsg.isVisible();
+            webKeyword.waitUntilVisible(xpath, 5000);
+            return webKeyword.isVisible(xpath);
         } catch (Exception e) {
-            logger.error("No 'Invalid' message detected.");
-            return false;
+            throw new RuntimeException("No 'Invalid' message detected: " + e.getMessage());
         }
     }
 
     public boolean areAllFiltersCleared() {
-        String usernameValue = page.inputValue("//label[normalize-space()='Username']/parent::div/following-sibling::div//input");
-        String employeeValue = page.inputValue("//input[contains(@placeholder,'Type for hints...')]");
-        String userRoleText = page.locator("//label[normalize-space()='User Role']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text--after')]/preceding-sibling::div").innerText().trim();
-        String statusText = page.locator("//label[normalize-space()='Status']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text--after')]/preceding-sibling::div").innerText().trim();
+        String usernameValue = webKeyword.getInputValue("//label[normalize-space()='Username']/parent::div/following-sibling::div//input");
+        String employeeValue = webKeyword.getInputValue("//input[contains(@placeholder,'Type for hints...')]");
+        String userRoleText = webKeyword.getText("//label[normalize-space()='User Role']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text--after')]/preceding-sibling::div").trim();
+        String statusText = webKeyword.getText("//label[normalize-space()='Status']/parent::div/following-sibling::div//div[contains(@class,'oxd-select-text--after')]/preceding-sibling::div").trim();
 
         boolean allCleared = usernameValue.isEmpty()
                 && employeeValue.isEmpty()
                 && userRoleText.equals("-- Select --")
                 && statusText.equals("-- Select --");
 
-        logger.info("Filters cleared check -> Username: '{}', Employee: '{}', Role: '{}', Status: '{}'",
-                usernameValue, employeeValue, userRoleText, statusText);
-
         return allCleared;
     }
 
     public boolean isResultTableVisible() {
-        return page.isVisible("//div[contains(@class,'orangehrm-container')]");
+        return webKeyword.isVisible("//div[contains(@class,'orangehrm-container')]");
     }
 
     public boolean verifyEmployeeNameInResults(String expectedEmployeeName) {
         try {
-            String shortName = expectedEmployeeName.split(" ")[0]; // lấy từ đầu, vd: "manda"
-            String locator = String.format(
+            String shortName = expectedEmployeeName.split(" ")[0];
+            String xpath = String.format(
                     "//div[@role='rowgroup']//div[@role='row']//div[@role='cell' and contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), '%s')]",
                     shortName.toLowerCase()
             );
-            page.locator(locator).first().waitFor(new Locator.WaitForOptions().setTimeout(10000));
-            logger.info("Employee name found in result table: " + shortName);
+            webKeyword.waitUntilVisible(xpath, 10000);
             return true;
         } catch (Exception e) {
-            logger.error("Error verifying employee name: " + e.getMessage());
-            return false;
+            throw new RuntimeException("Error verifying employee name: " + e.getMessage());
         }
     }
 

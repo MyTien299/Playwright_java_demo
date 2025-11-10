@@ -19,10 +19,11 @@ public class BaseLoginTest extends BaseTest {
     protected DashboardComponent dashboardComponent;
 
     @BeforeMethod
+    @Override
     public void setUp() {
         super.setUp();
-        loginPage = new LoginPage();
-        dashboardComponent = new DashboardComponent(PageManager.getPage());
+        loginPage = new LoginPage(webKeyword);
+        dashboardComponent = new DashboardComponent(webKeyword.getPage());
     }
 
     protected void performLogin(String username, String password) {
@@ -32,6 +33,8 @@ public class BaseLoginTest extends BaseTest {
 
     protected void verifySuccessfulLogin() {
         loginPage.waitForDashboard();
-        dashboardComponent.isAtDashboard();
+        if (!loginPage.isAtDashboard()) {
+            throw new RuntimeException("Dashboard not displayed after login!");
+        }
     }
 }

@@ -6,7 +6,6 @@ import org.example.hrmOrange.managers.PageManager;
 import org.example.hrmOrange.page.admin.AdminPage;
 import org.example.hrmOrange.page.dashboard.DashboardComponent;
 import org.example.hrmOrange.page.login.LoginPage;
-import org.example.hrmOrange.testcase.ui.login.OrangeHRM_Login_TC1_VerifyThatUserCanLoginWithValidDataSuccessfully;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -22,9 +21,9 @@ public class OrangeHRM_Admin_TC1_VerifySearchAdminByUsername extends BaseTest {
     @BeforeMethod
     public void setUp() {
         super.setUp();
-        loginPage = new LoginPage();
+        loginPage = new LoginPage(webKeyword);
         dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage();
+        adminPage = new AdminPage(webKeyword);
     }
 
     @TestCaseID("OrangeHRM_TC11")

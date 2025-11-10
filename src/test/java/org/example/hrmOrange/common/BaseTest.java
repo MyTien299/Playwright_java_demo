@@ -5,12 +5,16 @@ import org.example.hrmOrange.constants.AppConfig;
 import org.example.hrmOrange.helpers.ConfigReader;
 import org.example.hrmOrange.managers.BrowserFactory;
 import org.example.hrmOrange.managers.PageManager;
+import org.example.hrmOrange.keywords.WebKeyword;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
+
+    protected WebKeyword webKeyword;
+
     @BeforeMethod
     public void setUp() {
         BrowserFactory browserFactory = new BrowserFactory();
@@ -20,7 +24,10 @@ public class BaseTest {
         String browserVersion = AppConfig.BROWSER + " (Playwright)";
         ConfigReader.BROWSER_VERSION = browserVersion;
         
-        PageManager.getPage().navigate(AppConfig.URL);
+//        PageManager.getPage().navigate(AppConfig.URL);
+        webKeyword = new WebKeyword(PageManager.getPage());
+
+        webKeyword.navigateToUrl(AppConfig.URL);
     }
 
     @AfterMethod
