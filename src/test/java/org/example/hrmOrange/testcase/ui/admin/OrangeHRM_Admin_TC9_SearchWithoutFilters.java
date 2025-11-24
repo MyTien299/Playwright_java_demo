@@ -1,49 +1,69 @@
 package org.example.hrmOrange.testcase.ui.admin;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.qameta.allure.*;
+import io.qameta.allure.model.Status;
 import org.example.hrmOrange.annotation.TestCaseID;
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.managers.PageManager;
-import org.example.hrmOrange.page.admin.AdminPage;
-import org.example.hrmOrange.page.dashboard.DashboardComponent;
-import org.example.hrmOrange.page.login.LoginPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class OrangeHRM_Admin_TC9_SearchWithoutFilters extends BaseTest {
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Admin_TC9_SearchWithoutFilters.class);
-    private LoginPage loginPage;
-    private DashboardComponent dashboardComponent;
-    private AdminPage adminPage;
+@Story("Search without filters")
+@Severity(SeverityLevel.NORMAL)
+public class OrangeHRM_Admin_TC9_SearchWithoutFilters extends BaseAdminTest {
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage(webKeyword);
-        dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage(webKeyword);
+    @Test
+    @TestCaseID("OrangeHRM_TC19")
+    @Description("Verify that searching without filters displays all users")
+    @Severity(SeverityLevel.NORMAL)
+    public void searchWithoutAnyFilters() {
+
+        final String username = "Admin";
+        final String password = "admin123";
+
+        Allure.addAttachment("Test Data",
+                "Login Username: " + username + "\nLogin Password: " + password + "\nFilters: None");
+
+        step_Navigate_To_Login_Page();
+        step_Login(username, password);
+        step_Verify_Dashboard_Page_Displayed();
+        step_Navigate_To_Admin_Page();
+        step_Click_Search_Without_Filters();
+        step_Verify_User_List_Displayed();
     }
 
-    @TestCaseID("OrangeHRM_TC19")
-    @Test(description = "Verify that searching without filters displays all users")
-    public void searchWithoutAnyFilters() {
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+    @Step("Step 1 – Navigate to Login Page")
+    private void step_Navigate_To_Login_Page() {
+        loginSteps.navigateToLoginPage();
+    }
 
-        logger.info("Logging in as Admin...");
-        loginPage.login("Admin", "admin123");
-        Assert.assertTrue(dashboardComponent.isAtDashboard(), "Dashboard not visible after login!");
+    @Step("Step 2 – Login with username: {username}, password: {password}")
+    private void step_Login(String username, String password) {
+        loginSteps.login(username, password);
+    }
 
-        logger.info("Navigating to Admin page...");
-        adminPage.navigateToAdmin();
+    @Step("Step 3 – Verify dashboard is displayed after login")
+    private void step_Verify_Dashboard_Page_Displayed() {
+        loginSteps.verifyDashboard();
+    }
 
-        logger.info("Clicking Search without entering any filters...");
-        adminPage.clickSearch();
+    @Step("Step 4 – Navigate to Admin page")
+    private void step_Navigate_To_Admin_Page() {
+        adminSteps.navigateToAdminPage();
+    }
 
-        logger.info("Verifying that user list is displayed...");
-        Assert.assertTrue(adminPage.isResultTableVisible(), "User list not displayed!");
-        logger.info("Testcase passed: Search without filters displays all users.");
+    @Step("Step 5 – Click Search button without entering any filters")
+    private void step_Click_Search_Without_Filters() {
+        adminSteps.clickSearch();
+    }
+
+    @Step("Step 6 – Verify user list is displayed")
+    private void step_Verify_User_List_Displayed() {
+        boolean isTableVisible = adminPage.isResultTableVisible();
+
+        if (!isTableVisible) {
+            Allure.step("User list not displayed!", Status.FAILED);
+            Assert.fail("User list not displayed!");
+        }
+
+        Allure.step("User list is displayed correctly");
     }
 }

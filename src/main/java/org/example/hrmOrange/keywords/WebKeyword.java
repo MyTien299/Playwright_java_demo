@@ -100,6 +100,12 @@ public class WebKeyword {
         page.locator(locator).fill(text);
     }
 
+    @Step("Type text {text} into element: {locator}")
+    public void type(String locator, String text) {
+        LogUtils.info("Type text into " + locator + ": " + text);
+        page.locator(locator).pressSequentially(text, new Locator.PressSequentiallyOptions().setDelay(100));
+    }
+
     @Step("Get text of element: {locator}")
     public String getText(String locator) {
         String text = page.locator(locator).textContent();
@@ -115,6 +121,8 @@ public class WebKeyword {
     public String getInputValue(String xpath) {
         return page.inputValue(xpath);
     }
+
+
     // ======================================================
     // ⑤ HANDLE VERIFY ELEMENT
     // ======================================================

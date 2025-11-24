@@ -135,6 +135,52 @@ public class AllureReportUtils {
 
         // Create index.html in the dated folder for easy access
         createReportIndex(datedReportDir, reportFolderName);
+        
+        // Copy to latest folder for GitHub
+        copyToLatestFolder(sourceDir, reportFolderName);
+    }
+
+    /**
+     * Copies the report to the 'latest' folder for GitHub tracking.
+     */
+    private static void copyToLatestFolder(File sourceDir, String reportFolderName) throws IOException {
+        Path latestDir = REPORT_DIR.resolve("latest");
+        
+        // Delete old latest folder if exists
+        if (latestDir.toFile().exists()) {
+            FileUtils.deleteDirectory(latestDir.toFile());
+            logger.info("Removed old 'latest' report folder");
+        }
+        
+        // Create new latest folder
+        createDirectoryIfNotExist(latestDir);
+        
+        // Copy report to latest
+        FileUtils.copyDirectory(sourceDir, latestDir.toFile());
+        logger.info("✅ Report copied to 'latest' folder for GitHub tracking");
+        
+        // Create README in latest folder
+        createLatestReadme(latestDir, reportFolderName);
+    }
+    
+    /**
+     * Creates a README.md in the latest folder with report information.
+     */
+    private static void createLatestReadme(Path latestDir, String reportFolderName) throws IOException {
+        Path readmePath = latestDir.resolve("README.md");
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+        
+        String readmeContent = "# Latest Allure Test Report\n\n" +
+                "**Generated:** " + timestamp + "\n\n" +
+                "**Report Name:** " + reportFolderName + "\n\n" +
+                "## How to View\n\n" +
+                "Open `index.html` in your browser to view the report.\n\n" +
+                "## Note\n\n" +
+                "This folder contains only the latest test execution report. " +
+                "Historical reports are stored locally in `reports/yyyy-MM-dd/` folders.\n";
+        
+        Files.write(readmePath, readmeContent.getBytes(StandardCharsets.UTF_8));
+        logger.info("README.md created in 'latest' folder");
     }
 
     /**

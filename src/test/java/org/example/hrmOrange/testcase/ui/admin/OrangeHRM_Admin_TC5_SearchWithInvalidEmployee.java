@@ -1,62 +1,77 @@
 package org.example.hrmOrange.testcase.ui.admin;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.qameta.allure.*;
+import io.qameta.allure.model.Status;
 import org.example.hrmOrange.annotation.TestCaseID;
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.keywords.WebKeyword;
-import org.example.hrmOrange.managers.PageManager;
-import org.example.hrmOrange.page.admin.AdminPage;
-import org.example.hrmOrange.page.dashboard.DashboardComponent;
-import org.example.hrmOrange.page.login.LoginPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class OrangeHRM_Admin_TC5_SearchWithInvalidEmployee extends BaseTest{
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Admin_TC5_SearchWithInvalidEmployee.class);
-    private LoginPage loginPage;
-    private DashboardComponent dashboardComponent;
-    private AdminPage adminPage;
+@Story("Search with non-existent employee name")
+@Severity(SeverityLevel.NORMAL)
+public class OrangeHRM_Admin_TC5_SearchWithInvalidEmployee extends BaseAdminTest {
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage(webKeyword);
-        dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage(webKeyword);
+    @Test
+    @TestCaseID("OrangeHRM_TC15")
+    @Description("Verify that entering a non-existent employee name shows 'Invalid' message")
+    @Severity(SeverityLevel.NORMAL)
+    public void searchWithInvalidEmployee() {
+
+        final String username = "Admin";
+        final String password = "admin123";
+        final String nonExistentEmployeeName = "NonExistent Employee Name";
+
+        Allure.addAttachment("Test Data",
+                "Login Username: " + username + "\nLogin Password: " + password + "\nNon-existent Employee Name: " + nonExistentEmployeeName);
+
+        step_Navigate_To_Login_Page();
+        step_Login(username, password);
+        step_Verify_Dashboard_Page_Displayed();
+        step_Navigate_To_Admin_Page();
+        step_Enter_Employee_Name(nonExistentEmployeeName);
+        step_Click_Search();
+        step_Verify_No_Records_Found_Message_Displayed();
     }
 
-    @TestCaseID("OrangeHRM_TC15")
-    @Test(description = "Verify that searching with an invalid employee name shows no records found")
-    public void searchWithInvalidEmployee() {
-        // Navigate to login page
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+    @Step("Step 1 – Navigate to Login Page")
+    private void step_Navigate_To_Login_Page() {
+        loginSteps.navigateToLoginPage();
+    }
 
-        //Login as Admin
-        logger.info("Logging in as Admin...");
-        loginPage.login("Admin", "admin123");
+    @Step("Step 2 – Login with username: {username}, password: {password}")
+    private void step_Login(String username, String password) {
+        loginSteps.login(username, password);
+    }
 
-        // Verify dashboard loaded
-        Assert.assertTrue(dashboardComponent.isAtDashboard(), "Dashboard not visible!");
+    @Step("Step 3 – Verify dashboard is displayed after login")
+    private void step_Verify_Dashboard_Page_Displayed() {
+        loginSteps.verifyDashboard();
+    }
 
-        // Navigate to Admin page
-        logger.info("Navigating to Admin page...");
-        adminPage.navigateToAdmin();
+    @Step("Step 4 – Navigate to Admin page")
+    private void step_Navigate_To_Admin_Page() {
+        adminSteps.navigateToAdminPage();
+    }
 
-        // Enter invalid employee name
-        logger.info("Entering Employee Name = manda akhil user");
-        adminPage.enterEmployeeName("Invalid Employee XYZ");
+    @Step("Step 5 – Enter non-existent employee name: {employeeName}")
+    private void step_Enter_Employee_Name(String employeeName) {
+        // Nhập trực tiếp tên không có trong hệ thống (không chọn từ autocomplete)
+        webKeyword.fill("//input[@placeholder='Type for hints...']", employeeName);
+    }
 
-        // Click Search
-        logger.info("Clicking Search...");
-        adminPage.clickSearch();
+    @Step("Step 6 – Click Search button")
+    private void step_Click_Search() {
+        adminSteps.clickSearch();
+    }
 
-        // Verify invalid employee name message displayed
-        logger.info("Verifying invalid employee name message displayed...");
-        Assert.assertTrue(adminPage.isEmployeeInvalidMessageVisible(), "Expected 'Invalid' message not found!");
+    @Step("Step 7 – Verify 'Invalid' message is displayed")
+    private void step_Verify_No_Records_Found_Message_Displayed() {
+        boolean isInvalidMessageVisible = adminPage.isEmployeeInvalidMessageVisible();
 
-        logger.info("Testcase passed: Searching with invalid employee name shows no data.");
+        if (!isInvalidMessageVisible) {
+            Allure.step("Expected 'Invalid' message not displayed!", Status.FAILED);
+            Assert.fail("Expected 'Invalid' message not displayed!");
+        }
+
+        Allure.step("'Invalid' message is displayed correctly");
     }
 }

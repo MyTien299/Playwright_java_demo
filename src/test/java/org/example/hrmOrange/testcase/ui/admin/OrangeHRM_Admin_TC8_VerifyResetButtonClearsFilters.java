@@ -1,57 +1,75 @@
 package org.example.hrmOrange.testcase.ui.admin;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.qameta.allure.*;
 import org.example.hrmOrange.annotation.TestCaseID;
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.managers.PageManager;
-import org.example.hrmOrange.page.admin.AdminPage;
-import org.example.hrmOrange.page.dashboard.DashboardComponent;
-import org.example.hrmOrange.page.login.LoginPage;
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters extends BaseTest {
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters.class);
-    private LoginPage loginPage;
-    private DashboardComponent dashboardComponent;
-    private AdminPage adminPage;
+@Story("Reset button functionality")
+@Severity(SeverityLevel.NORMAL)
+public class OrangeHRM_Admin_TC8_VerifyResetButtonClearsFilters extends BaseAdminTest {
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage(webKeyword);
-        dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage(webKeyword);
+    @Test
+    @TestCaseID("OrangeHRM_TC18")
+    @Description("Verify that Reset button clears all filters in Admin search form")
+    @Severity(SeverityLevel.NORMAL)
+    public void verifyResetButtonClearsFilters() {
+
+        final String username = "Admin";
+        final String password = "admin123";
+        final String searchUsername = "Admin";
+        final String userRole = "ESS";
+        final String employeeName = "Johana rincon Birinciddd";
+        final String status = "Enabled";
+
+        Allure.addAttachment("Test Data",
+                "Login Username: " + username + "\nLogin Password: " + password +
+                        "\nSearch Username: " + searchUsername + "\nUser Role: " + userRole +
+                        "\nEmployee Name: " + employeeName + "\nStatus: " + status);
+
+        step_Navigate_To_Login_Page();
+        step_Login(username, password);
+        step_Verify_Dashboard_Page_Displayed();
+        step_Navigate_To_Admin_Page();
+        step_Fill_Admin_Search_Filters(searchUsername, userRole, employeeName, status);
+        step_Click_Reset_Button();
+        step_Verify_All_Filters_Are_Cleared();
     }
 
-    @TestCaseID("OrangeHRM_TC18")
-    @Test(description = "Verify that Reset button clears all filters in Admin search form")
-    public void verifyResetButtonClearsFilters() {
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+    @Step("Step 1 – Navigate to Login Page")
+    private void step_Navigate_To_Login_Page() {
+        loginSteps.navigateToLoginPage();
+    }
 
-        logger.info("Logging in as Admin...");
-        loginPage.login("Admin", "admin123");
+    @Step("Step 2 – Login with username: {username}, password: {password}")
+    private void step_Login(String username, String password) {
+        loginSteps.login(username, password);
+    }
 
-        Assert.assertTrue(dashboardComponent.isAtDashboard(), "Dashboard not visible after login!");
+    @Step("Step 3 – Verify dashboard is displayed after login")
+    private void step_Verify_Dashboard_Page_Displayed() {
+        loginSteps.verifyDashboard();
+    }
 
-        logger.info("Navigating to Admin page...");
-        adminPage.navigateToAdmin();
+    @Step("Step 4 – Navigate to Admin page")
+    private void step_Navigate_To_Admin_Page() {
+        adminSteps.navigateToAdminPage();
+    }
 
-        logger.info("Filling search filters...");
-        adminPage.searchAdminByUsername("Admin");
-        adminPage.selectUserRole("ESS");
-        adminPage.enterEmployeeName("manda user");
-        adminPage.selectStatus("Enabled");
+    @Step("Step 5 – Fill Admin search filters with username: {username}, role: {userRole}, employee: {employeeName}, status: {status}")
+    private void step_Fill_Admin_Search_Filters(String username, String userRole, String employeeName, String status) {
+        adminSteps.fillUsername(username);
+        adminSteps.selectUserRole(userRole);
+        adminSteps.enterEmployeeName(employeeName);
+        adminSteps.selectStatus(status);
+    }
 
-        logger.info("Clicking Reset button...");
-        adminPage.clickReset();
+    @Step("Step 6 – Click Reset button")
+    private void step_Click_Reset_Button() {
+        adminSteps.clickReset();
+    }
 
-        logger.info("Verifying that all filters are cleared...");
-        Assert.assertTrue(adminPage.areAllFiltersCleared(), "Filters were not cleared after clicking Reset!");
-
-        logger.info("Testcase passed: Reset button clears all filters successfully.");
+    @Step("Step 7 – Verify all filters are cleared")
+    private void step_Verify_All_Filters_Are_Cleared() {
+        adminSteps.verifyFiltersCleared();
     }
 }

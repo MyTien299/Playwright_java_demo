@@ -1,56 +1,79 @@
 package org.example.hrmOrange.testcase.ui.admin;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import io.qameta.allure.*;
+import io.qameta.allure.model.Status;
 import org.example.hrmOrange.annotation.TestCaseID;
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.managers.PageManager;
-import org.example.hrmOrange.page.admin.AdminPage;
-import org.example.hrmOrange.page.dashboard.DashboardComponent;
-import org.example.hrmOrange.page.login.LoginPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole extends BaseTest {
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole.class);
-    private LoginPage loginPage;
-    private DashboardComponent dashboardComponent;
-    private AdminPage adminPage;
+@Story("Search with valid username and mismatched role")
+@Severity(SeverityLevel.NORMAL)
+public class OrangeHRM_Admin_TC10_SearchWithValidUsernameAndInvalidRole extends BaseAdminTest {
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage(webKeyword);
-        dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage(webKeyword);
+    @Test
+    @TestCaseID("OrangeHRM_TC21")
+    @Description("Verify that searching with a valid username but mismatched role returns no results")
+    @Severity(SeverityLevel.NORMAL)
+    public void searchWithValidUsernameAndInvalidRole() {
+
+        final String username = "Admin";
+        final String password = "admin123";
+        final String searchUsername = "Admin";
+        final String mismatchedRole = "ESS";
+
+        Allure.addAttachment("Test Data",
+                "Login Username: " + username + "\nLogin Password: " + password +
+                        "\nSearch Username: " + searchUsername + "\nMismatched Role: " + mismatchedRole);
+
+        step_Navigate_To_Login_Page();
+        step_Login(username, password);
+        step_Verify_Dashboard_Page_Displayed();
+        step_Navigate_To_Admin_Page();
+        step_Fill_Username_And_Role(searchUsername, mismatchedRole);
+        step_Click_Search();
+        step_Verify_No_Records_Found();
     }
 
-    @TestCaseID("OrangeHRM_TC21")
-    @Test(description = "Verify that searching with a valid username but invalid role returns no results")
-    public void searchWithValidUsernameAndInvalidRole() {
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+    @Step("Step 1 – Navigate to Login Page")
+    private void step_Navigate_To_Login_Page() {
+        loginSteps.navigateToLoginPage();
+    }
 
-        logger.info("Logging in as Admin...");
-        loginPage.login("Admin", "admin123");
-        Assert.assertTrue(dashboardComponent.isAtDashboard(), "Dashboard not visible after login!");
+    @Step("Step 2 – Login with username: {username}, password: {password}")
+    private void step_Login(String username, String password) {
+        loginSteps.login(username, password);
+    }
 
-        logger.info("Navigating to Admin page...");
-        adminPage.navigateToAdmin();
+    @Step("Step 3 – Verify dashboard is displayed after login")
+    private void step_Verify_Dashboard_Page_Displayed() {
+        loginSteps.verifyDashboard();
+    }
 
-        logger.info("Entering valid username = 'Admin'...");
-        adminPage.searchAdminByUsername("Admin");
+    @Step("Step 4 – Navigate to Admin page")
+    private void step_Navigate_To_Admin_Page() {
+        adminSteps.navigateToAdminPage();
+    }
 
-        logger.info("Selecting invalid role = 'ESS'...");
-        adminPage.selectUserRole("ESS"); // giả sử Admin không phải role ESS
+    @Step("Step 5 – Fill username: {username} and select role: {role}")
+    private void step_Fill_Username_And_Role(String username, String role) {
+        adminSteps.fillUsername(username);
+        adminSteps.selectUserRole(role);
+    }
 
-        logger.info("Clicking Search button...");
-        adminPage.clickSearch();
+    @Step("Step 6 – Click Search button")
+    private void step_Click_Search() {
+        adminSteps.clickSearch();
+    }
 
-        logger.info("Verifying that no records are found...");
-        Assert.assertTrue(adminPage.isNoRecordFound(), "Unexpected records found for valid username + invalid role!");
+    @Step("Step 7 – Verify 'No Records Found' message is displayed")
+    private void step_Verify_No_Records_Found() {
+        boolean isNoRecordFound = adminPage.isNoRecordFound();
 
-        logger.info("Testcase passed: Searching with valid username and invalid role shows no results.");
+        if (!isNoRecordFound) {
+            Allure.step("Unexpected records found for valid username + mismatched role!", Status.FAILED);
+            Assert.fail("Unexpected records found for valid username + mismatched role!");
+        }
+
+        Allure.step("'No Records Found' message is displayed correctly");
     }
 }

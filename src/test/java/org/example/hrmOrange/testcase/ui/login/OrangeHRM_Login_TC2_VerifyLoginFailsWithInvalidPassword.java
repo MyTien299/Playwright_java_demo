@@ -1,9 +1,7 @@
 package org.example.hrmOrange.testcase.ui.login;
 
 import io.qameta.allure.*;
-import org.apache.logging.log4j.LogManager;
 import io.qameta.allure.model.Status;
-import org.apache.logging.log4j.Logger;
 import org.example.hrmOrange.annotation.TestCaseID;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,42 +9,43 @@ import org.testng.annotations.Test;
 @Story("Login with invalid credentials")
 @Severity(SeverityLevel.NORMAL)
 public class OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword extends BaseLoginTest {
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Login_TC2_VerifyLoginFailsWithInvalidPassword.class);
 
     @Test
     @TestCaseID("OrangeHRM_TC02")
     @Description("Verify that login fails when using a valid username but invalid password")
     @Severity(SeverityLevel.NORMAL)
     public void loginWithInvalidPassword() {
-        // Test Data
         final String username = "Admin";
         final String invalidPassword = "wrongpass";
         final String expectedErrorMessage = "Invalid credentials";
 
-        // Attach test data to report
-        Allure.addAttachment("Test Data", 
-            "Username: " + username + "\nPassword: " + invalidPassword);
+        Allure.addAttachment("Test Data",
+                "Username: " + username + "\nPassword: " + invalidPassword);
 
-        // Steps
-        logger.info("Step 1: Navigate to login page and enter invalid password");
-        performLogin(username, invalidPassword);
+        step_Navigate_To_Login_Page();
+        step_Login(username, invalidPassword);
+        step_Verify_Error_Message_Displayed(expectedErrorMessage);
+    }
 
-        // Verification
-        logger.info("Step 2: Verify error message is displayed");
+    @Step("Step 1 – Navigate to Login Page")
+    private void step_Navigate_To_Login_Page() {
+        loginSteps.navigateToLoginPage();
+    }
+
+    @Step("Step 2 – Login with username: {username}, invalid password: {password}")
+    private void step_Login(String username, String password) {
+        loginSteps.login(username, password);
+    }
+
+    @Step("Step 3 – Verify error message: {expectedErrorMessage}")
+    private void step_Verify_Error_Message_Displayed(String expectedErrorMessage) {
         String actualErrorMessage = loginPage.getErrorMessage();
-        
-        try {
-            Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
-                "Expected error message not shown when logging in with wrong password!");
-            
-            logger.info("Verification passed: Correct error message is displayed");
-            Allure.step("Verification: Error message contains '" + expectedErrorMessage + "'");
-        } catch (AssertionError e) {
-            Allure.step("Verification failed: " + e.getMessage(), Status.FAILED);
-            throw e;
+
+        if (!actualErrorMessage.contains(expectedErrorMessage)) {
+            Allure.step("Error message mismatch! Actual: " + actualErrorMessage, Status.FAILED);
+            Assert.fail("Expected: " + expectedErrorMessage + " but found: " + actualErrorMessage);
         }
 
-        logger.info("Test case passed: Login failed with invalid password as expected");
-        Allure.step("Test case passed: Login failed with invalid password as expected");
+        Allure.step("Error message is correct: " + actualErrorMessage);
     }
 }

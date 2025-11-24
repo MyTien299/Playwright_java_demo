@@ -1,64 +1,76 @@
 package org.example.hrmOrange.testcase.ui.admin;
 
+import io.qameta.allure.*;
+import io.qameta.allure.model.Status;
 import org.example.hrmOrange.annotation.TestCaseID;
-import org.example.hrmOrange.common.BaseTest;
-import org.example.hrmOrange.managers.PageManager;
-import org.example.hrmOrange.page.admin.AdminPage;
-import org.example.hrmOrange.page.dashboard.DashboardComponent;
-import org.example.hrmOrange.page.login.LoginPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-public class OrangeHRM_Admin_TC2_SearchByUserRoleAdmin extends BaseTest {
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Admin_TC2_SearchByUserRoleAdmin.class);
-    private LoginPage loginPage;
-    private DashboardComponent dashboardComponent;
-    private AdminPage adminPage;
+@Story("Search by User Role")
+@Severity(SeverityLevel.CRITICAL)
+public class OrangeHRM_Admin_TC2_SearchByUserRoleAdmin extends BaseAdminTest {
 
-    @BeforeMethod
-    public void setUp() {
-        super.setUp();
-        loginPage = new LoginPage(webKeyword);
-        dashboardComponent = new DashboardComponent(PageManager.getPage());
-        adminPage = new AdminPage(webKeyword);
+    @Test
+    @TestCaseID("OrangeHRM_TC12")
+    @Description("Verify that admin search by User Role 'Admin' returns correct data")
+    @Severity(SeverityLevel.CRITICAL)
+    public void searchByUserRoleAdmin() {
+
+        final String username = "Admin";
+        final String password = "admin123";
+        final String userRole = "Admin";
+
+        Allure.addAttachment("Test Data",
+                "Login Username: " + username + "\nLogin Password: " + password + "\nUser Role: " + userRole);
+
+        step_Navigate_To_Login_Page();
+        step_Login(username, password);
+        step_Verify_Dashboard_Page_Displayed();
+        step_Navigate_To_Admin_Page();
+        step_Select_User_Role(userRole);
+        step_Click_Search();
+        step_Verify_Admin_Displayed_In_Table(userRole);
     }
 
-    @TestCaseID("OrangeHRM_TC12")
-    @Test(description = "Verify that admin search by User Role 'Admin' returns correct data")
-    public void searchByUserRoleAdmin() {
-        //Navigate to login
-        logger.info("Navigating to login page...");
-        loginPage.navigateToLogin();
+    @Step("Step 1 – Navigate to Login Page")
+    private void step_Navigate_To_Login_Page() {
+        loginSteps.navigateToLoginPage();
+    }
 
-        //Login
-        logger.info("Performing login with username='Admin' and password='admin123'");
-        loginPage.login("Admin", "admin123");
+    @Step("Step 2 – Login with username: {username}, password: {password}")
+    private void step_Login(String username, String password) {
+        loginSteps.login(username, password);
+    }
 
-        // Verify dashboard
-        logger.info("Verifying dashboard is visible...");
-        Assert.assertTrue(dashboardComponent.isAtDashboard(),
-                "Login failed — dashboard not visible!");
+    @Step("Step 3 – Verify dashboard is displayed after login")
+    private void step_Verify_Dashboard_Page_Displayed() {
+        loginSteps.verifyDashboard();
+    }
 
-        // Navigate to Admin module
-        logger.info("Navigating to Admin page...");
-        adminPage.navigateToAdmin();
+    @Step("Step 4 – Navigate to Admin page")
+    private void step_Navigate_To_Admin_Page() {
+        adminSteps.navigateToAdminPage();
+    }
 
-        // Select User Role = Admin
-        logger.info("Selecting User Role = Admin");
-        adminPage.selectUserRole("Admin");
+    @Step("Step 5 – Select User Role: {userRole}")
+    private void step_Select_User_Role(String userRole) {
+        adminSteps.selectUserRole(userRole);
+    }
 
-        //Click Search
-        logger.info("Clicking Search button...");
-        adminPage.searchAdminByUsername(""); // Không nhập username, chỉ lọc theo Role
+    @Step("Step 6 – Click Search button")
+    private void step_Click_Search() {
+        adminSteps.clickSearch();
+    }
 
-        // Verify at least 1 result exists
-        logger.info("Verifying at least one admin user is displayed in the result table...");
-        Assert.assertTrue(adminPage.isAdminDisplayedInTable("Admin"),
-                "No admin user found in the result table!");
+    @Step("Step 7 – Verify at least one admin user is displayed in the result table")
+    private void step_Verify_Admin_Displayed_In_Table(String userRole) {
+        boolean isDisplayed = adminPage.isAdminDisplayedInTable("Admin");
 
-        logger.info("Testcase passed: admin search by User Role 'Admin' returns correct data");
+        if (!isDisplayed) {
+            Allure.step("No admin user found in the result table!", Status.FAILED);
+            Assert.fail("No admin user with role '" + userRole + "' found in the result table!");
+        }
+
+        Allure.step("At least one admin user is displayed correctly in the result table");
     }
 }

@@ -37,3 +37,13 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Test Reports ###
+# Ignore all reports except latest
+reports/*
+!reports/latest/
+logs/
+automation.log
+test-output/
+allure-results/
+.allure/

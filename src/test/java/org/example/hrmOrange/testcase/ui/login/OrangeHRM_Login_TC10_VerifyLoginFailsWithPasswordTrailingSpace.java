@@ -2,52 +2,51 @@ package org.example.hrmOrange.testcase.ui.login;
 
 import io.qameta.allure.*;
 import io.qameta.allure.model.Status;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.example.hrmOrange.annotation.TestCaseID;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-@Story("Login with password formatting")
-@Severity(SeverityLevel.MINOR)
-public class OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace extends BaseLoginTest {
-    private static final Logger logger = LogManager.getLogger(OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace.class);
+ @Story("Login with password formatting")
+ @Severity(SeverityLevel.MINOR)
+ public class OrangeHRM_Login_TC10_VerifyLoginFailsWithPasswordTrailingSpace extends BaseLoginTest {
 
-    @Test
-    @TestCaseID("OrangeHRM_TC10")
-    @Description("Verify that login fails when password ends with whitespace")
-    @Severity(SeverityLevel.MINOR)
-    public void loginWithPasswordTrailingSpace() {
-        // Test Data
-        final String username = "Admin";
-        final String passwordWithTrailingSpace = "admin123 ";
-        final String expectedErrorMessage = "Invalid credentials";
+     @Test
+     @TestCaseID("OrangeHRM_TC10")
+     @Description("Verify that login fails when password ends with whitespace")
+     @Severity(SeverityLevel.MINOR)
+     public void loginWithPasswordTrailingSpace() {
+         final String username = "Admin";
+         final String passwordWithTrailingSpace = "admin123 ";
+         final String expectedErrorMessage = "Invalid credentials";
 
-        // Attach test data to report
-        Allure.addAttachment("Test Data", 
-            "Username: " + username + "\nPassword: '" + passwordWithTrailingSpace + "' (with trailing space)");
+         Allure.addAttachment("Test Data",
+                 "Username: " + username + "\nPassword: '" + passwordWithTrailingSpace + "' (with trailing space)");
 
-        // Steps
-        logger.info("Step 1: Navigate to login page and enter password with trailing space");
-        performLogin(username, passwordWithTrailingSpace);
+         step_Navigate_To_Login_Page();
+         step_Login(username, passwordWithTrailingSpace);
+         step_Verify_Error_Message_Displayed(expectedErrorMessage);
+     }
 
-        // Verification
-        logger.info("Step 2: Verify error message is displayed");
-        String actualErrorMessage = loginPage.getErrorMessage();
-        
-        try {
-            Assert.assertTrue(actualErrorMessage.contains(expectedErrorMessage),
-                "Expected 'Invalid credentials' message not shown when password has trailing space!");
-            
-            logger.info("Verification passed: Correct error message is displayed");
-            Allure.step("Verification: Error message contains '" + expectedErrorMessage + "'");
-        } catch (AssertionError e) {
-            Allure.step("Verification failed: " + e.getMessage(), Status.FAILED);
-            throw e;
-        }
+     @Step("Step 1 – Navigate to Login Page")
+     private void step_Navigate_To_Login_Page() {
+         loginSteps.navigateToLoginPage();
+     }
 
-        logger.info("Test case passed: Login failed with password having trailing space as expected");
-        Allure.step("Test case passed: Login failed with password having trailing space as expected");
-    }
-}
+     @Step("Step 2 – Login with username: {username}, password (trailing space): {password}")
+     private void step_Login(String username, String password) {
+         loginSteps.login(username, password);
+     }
+
+     @Step("Step 3 – Verify error message: {expectedErrorMessage}")
+     private void step_Verify_Error_Message_Displayed(String expectedErrorMessage) {
+         String actualErrorMessage = loginPage.getErrorMessage();
+
+         if (!actualErrorMessage.contains(expectedErrorMessage)) {
+             Allure.step("Error message mismatch! Actual: " + actualErrorMessage, Status.FAILED);
+             Assert.fail("Expected: " + expectedErrorMessage + " but found: " + actualErrorMessage);
+         }
+
+         Allure.step("Error message is correct: " + actualErrorMessage);
+     }
+ }
